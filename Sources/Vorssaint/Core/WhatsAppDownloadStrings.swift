@@ -546,7 +546,21 @@ extension WhatsAppDownloadStrings {
             lastRunFormat: uk.lastRunFormat, nextRunFormat: uk.nextRunFormat,
             firstMessageFormat: uk.firstMessageFormat, localNote: uk.localNote,
             notificationFormat: uk.notificationFormat, scanFailed: uk.scanFailed, manageButton: uk.manageButton)
-        case .enUS, .id: return OperationalStrings(
+        case .id: return OperationalStrings(
+            automaticCaption: "Memeriksa sekali sehari dan memindahkan berkas sesuai aturan yang telah melewati batas waktu ke Tong Sampah.",
+            retentionCaption: "Berkas yang baru diubah harus menunggu lagi selama masa penyimpanan penuh.",
+            manualIntro: "Periksa kapan saja. Pilihan awal mengikuti jenis berkas dan batas waktu; semua berkas yang ditemukan tetap bisa ditinjau.",
+            resultsFormat: "%1$d berkas terkonfirmasi · %2$@",
+            selectRules: "Pilih sesuai aturan saya",
+            cleanSelectedFormat: "Pindahkan %1$d ke Tong Sampah · %2$@",
+            lastRunFormat: "Pembersihan terakhir %@: %d berkas · %@ · %d gagal",
+            nextRunFormat: "Pemeriksaan otomatis berikutnya %@.",
+            firstMessageFormat: "%d berkas yang sudah ada memenuhi aturan Anda. Pilih untuk mengelolanya atau hanya unduhan berikutnya.",
+            localNote: "Hanya metadata lokal yang diperiksa. Space7 tidak membaca isi berkas ataupun percakapan.",
+            notificationFormat: "%1$d berkas (%2$@) dipindahkan ke Tong Sampah. %3$d gagal.",
+            scanFailed: "Gagal memeriksa folder Unduhan. Periksa izin File & Folder di Pengaturan Sistem.",
+            manageButton: "Kelola…")
+        case .enUS: return OperationalStrings(
             automaticCaption: enUS.automaticCaption, retentionCaption: enUS.retentionCaption,
             manualIntro: enUS.manualIntro, resultsFormat: enUS.resultsFormat,
             selectRules: enUS.selectRules, cleanSelectedFormat: enUS.cleanSelectedFormat,
