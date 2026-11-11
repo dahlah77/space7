@@ -192,6 +192,28 @@ extension KeepAwakeAutomationStrings {
         automationCaptionAll: "Starts only when every selected condition is active."
     )
 
+    static let id = KeepAwakeAutomationStrings(
+        automationSection: "Automation",
+        automationCaption: "Starts when any selected condition is active.",
+        automationOff: "Off",
+        externalDisplayToggle: "External display",
+        externalDisplayActive: "Active while an external display is connected",
+        powerToggle: "Power",
+        powerActive: "Active while connected to power",
+        runningAppsToggle: "Applications",
+        runningAppsActive: "Active while a selected app is running",
+        runningAppsListTitle: "Selected apps",
+        runningAppsAddButton: "Add an app…",
+        runningAppsRemoveButton: "Remove",
+        runningAppsListCaption: "Keep Awake starts while any of these apps is open, even in the background.",
+        automationActive: "Active because an automatic condition is met",
+        pauseWhenLockedToggle: "Pause while the Mac is locked",
+        pauseWhenLockedCaption: "Follows normal sleep rules while locked and resumes the remaining session after you unlock.",
+        matchAny: "Any",
+        matchAll: "All",
+        automationCaptionAll: "Starts only when every selected condition is active."
+    )
+
     static let ptBR = KeepAwakeAutomationStrings(
         automationSection: "Automação",
         automationCaption: "Inicia quando qualquer condição selecionada estiver ativa.",

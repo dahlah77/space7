@@ -546,7 +546,7 @@ extension WhatsAppDownloadStrings {
             lastRunFormat: uk.lastRunFormat, nextRunFormat: uk.nextRunFormat,
             firstMessageFormat: uk.firstMessageFormat, localNote: uk.localNote,
             notificationFormat: uk.notificationFormat, scanFailed: uk.scanFailed, manageButton: uk.manageButton)
-        case .enUS: return OperationalStrings(
+        case .enUS, .id: return OperationalStrings(
             automaticCaption: enUS.automaticCaption, retentionCaption: enUS.retentionCaption,
             manualIntro: enUS.manualIntro, resultsFormat: enUS.resultsFormat,
             selectRules: enUS.selectRules, cleanSelectedFormat: enUS.cleanSelectedFormat,
