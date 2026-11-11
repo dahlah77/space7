@@ -25,7 +25,7 @@ struct NotchFilesStrings {
 extension FeatureStrings {
     static func notchFiles(_ language: AppLanguage) -> NotchFilesStrings {
         switch language {
-        case .enUS: return NotchFilesStrings(
+        case .enUS, .id: return NotchFilesStrings(
             archive: "Create ZIP",
             archiveHint: "Each selected item is saved as a separate ZIP. Originals stay unchanged.",
             saved: "Saved",

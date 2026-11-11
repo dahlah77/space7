@@ -16,6 +16,7 @@ extension FeatureStrings {
     static func finderRename(_ language: AppLanguage) -> FinderRenameFeatureStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -42,6 +43,15 @@ extension FinderRenameFeatureStrings {
         enableLabel: "Use a shortcut to rename",
         caption: "The shortcut only acts in Finder and leaves text fields alone. F2 works as a regular key; on keyboards where it controls brightness, use Fn-F2 or choose another shortcut.",
         shortcutLabel: "Rename"
+    )
+
+    static let id = FinderRenameFeatureStrings(
+        pageTitle: "Jalan pintas Finder",
+        hubTitle: "Ubah nama jalan pintas",
+        hubDescription: "Mengubah nama berkas atau folder yang dipilih dengan pintasan yang Anda pilih.",
+        enableLabel: "Gunakan jalan pintas untuk mengubah nama",
+        caption: "Jalan pintas hanya berfungsi di Finder dan meninggalkan kolom teks saja. F2 bekerja sebagai kunci biasa; pada papan tombol di mana mengendalikan kecerahan, gunakan Fn-F2 atau pilih jalan pintas lain.",
+        shortcutLabel: "Ganti Nama"
     )
 
     static let ptBR = FinderRenameFeatureStrings(

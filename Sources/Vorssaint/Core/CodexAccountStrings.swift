@@ -30,7 +30,7 @@ struct CodexAccountStrings {
 extension FeatureStrings {
     static func codexAccounts(_ language: AppLanguage) -> CodexAccountStrings {
         switch language {
-        case .enUS: return CodexAccountStrings(
+        case .enUS, .id: return CodexAccountStrings(
             title: "Codex accounts",
             explanation: "Each CODEX_HOME folder you add gets its own limits card. While the AI Agents page is open, Codex checks each one about every five minutes with that folder’s own sign-in. No prompt is sent.",
             accountName: "Account name",

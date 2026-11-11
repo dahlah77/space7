@@ -39,6 +39,7 @@ extension FeatureStrings {
     static func feedback(_ language: AppLanguage) -> FeedbackStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -60,7 +61,7 @@ extension FeatureStrings {
 extension FeedbackStrings {
     static let enUS = FeedbackStrings(
         sectionTitle: "Feedback",
-        sectionCaption: "Send a bug report or feature idea directly to the person who maintains Vorssaint.",
+        sectionCaption: "Send a bug report or feature idea directly to the person who maintains Space7.",
         openButton: "Send feedback",
         windowTitle: "Send feedback",
         bugTitle: "Bug",
@@ -90,9 +91,41 @@ extension FeedbackStrings {
         diagnosticsChannelLabel: "Update channel"
     )
 
+    static let id = FeedbackStrings(
+        sectionTitle: "Feedback",
+        sectionCaption: "Kirim laporan bug atau fitur ide langsung kepada orang yang mempertahankan Space7.",
+        openButton: "Kirim umpan balik",
+        windowTitle: "Kirim umpan balik",
+        bugTitle: "Bug",
+        featureTitle: "Ide fitur",
+        messageLabel: "Apa yang ingin kau ceritakan?",
+        bugPlaceholder: "Ceritakan apa yang terjadi dan apa yang kau harapkan.",
+        featurePlaceholder: "Jelaskan ide dan bagaimana itu akan membantu.",
+        charactersFormat: "%d of 2000 characters",
+        includeDiagnostics: "Sertakan rincian teknis",
+        includeDiagnosticsCaption: "Tambahkan hanya rincian teknis yang ditampilkan di bawah ini. Ini tidak termasuk log.",
+        whatSentTitle: "Apa yang akan dikirim",
+        whatSentBasic: "Kategori pilihan Anda dan teks di atas.",
+        whatSentDiagnostics: "Rincian teknis terdaftar di bawah ini.",
+        privacyNote: "Tidak ada nama, akun, email, identifier perangkat, log, cuplikan, berkas, atau isi papan klip termasuk. IP publik Anda sementara diproses untuk perlindungan penyalahgunaan dan tidak melekat pada umpan balik.",
+        retentionNote: "Setelah pengiriman, teks tetap dalam saluran dukungan pribadi sampai pemilik layanan menghapusnya. Salinan yang belum dikirim dihapus permanen setelah 7 hari.",
+        sendButton: "Kirim umpan balik",
+        sending: "Mengirim:",
+        sentTitle: "Feedback dikirim",
+        sentCaption: "Tidak ada informasi kontak yang dikirim, sehingga Anda tidak akan menerima balasan langsung.",
+        unavailableError: "Tak bisa menyambung. Periksa koneksi internet Anda dan coba lagi.",
+        rateLimitError: "Terlalu banyak kiriman dari jaringan ini. Silakan coba lagi nanti.",
+        genericError: "Tidak dapat mengirim umpan balik sekarang.",
+        done: "Selesai",
+        commandBug: "Laporkan bug",
+        commandFeature: "Sarankan fitur",
+        commandSubtitle: "Kirim umpan balik",
+        diagnosticsChannelLabel: "channels-action"
+    )
+
     static let ptBR = FeedbackStrings(
         sectionTitle: "Feedback",
-        sectionCaption: "Envie um relato de bug ou uma ideia de recurso diretamente para quem mantém o Vorssaint.",
+        sectionCaption: "Envie um relato de bug ou uma ideia de recurso diretamente para quem mantém o Space7.",
         openButton: "Enviar feedback",
         windowTitle: "Enviar feedback",
         bugTitle: "Bug",
@@ -124,7 +157,7 @@ extension FeedbackStrings {
 
     static let tr = FeedbackStrings(
         sectionTitle: "Geri bildirim",
-        sectionCaption: "Bir hata bildirimini veya özellik fikrini doğrudan Vorssaint bakımcısına gönderin.",
+        sectionCaption: "Bir hata bildirimini veya özellik fikrini doğrudan Space7 bakımcısına gönderin.",
         openButton: "Geri bildirim gönder",
         windowTitle: "Geri bildirim gönder",
         bugTitle: "Hata",
@@ -156,7 +189,7 @@ extension FeedbackStrings {
 
     static let ru = FeedbackStrings(
         sectionTitle: "Обратная связь",
-        sectionCaption: "Отправьте сообщение об ошибке или идею функции напрямую разработчику Vorssaint.",
+        sectionCaption: "Отправьте сообщение об ошибке или идею функции напрямую разработчику Space7.",
         openButton: "Отправить отзыв",
         windowTitle: "Отправить отзыв",
         bugTitle: "Ошибка",
@@ -188,7 +221,7 @@ extension FeedbackStrings {
 
     static let es = FeedbackStrings(
         sectionTitle: "Comentarios",
-        sectionCaption: "Envía un informe de error o una idea directamente a quien mantiene Vorssaint.",
+        sectionCaption: "Envía un informe de error o una idea directamente a quien mantiene Space7.",
         openButton: "Enviar comentarios",
         windowTitle: "Enviar comentarios",
         bugTitle: "Error",
@@ -220,7 +253,7 @@ extension FeedbackStrings {
 
     static let sk = FeedbackStrings(
         sectionTitle: "Spätná väzba",
-        sectionCaption: "Pošlite hlásenie o chybe alebo nápad na funkciu priamo osobe, ktorá udržiava Vorssaint.",
+        sectionCaption: "Pošlite hlásenie o chybe alebo nápad na funkciu priamo osobe, ktorá udržiava Space7.",
         openButton: "Poslať spätnú väzbu",
         windowTitle: "Poslať spätnú väzbu",
         bugTitle: "Chyba",
@@ -252,7 +285,7 @@ extension FeedbackStrings {
 
     static let de = FeedbackStrings(
         sectionTitle: "Feedback",
-        sectionCaption: "Sende einen Fehlerbericht oder eine Funktionsidee direkt an den Vorssaint-Entwickler.",
+        sectionCaption: "Sende einen Fehlerbericht oder eine Funktionsidee direkt an den Space7-Entwickler.",
         openButton: "Feedback senden",
         windowTitle: "Feedback senden",
         bugTitle: "Fehler",
@@ -284,7 +317,7 @@ extension FeedbackStrings {
 
     static let fr = FeedbackStrings(
         sectionTitle: "Avis",
-        sectionCaption: "Envoyez un rapport de bug ou une idée directement à la personne qui maintient Vorssaint.",
+        sectionCaption: "Envoyez un rapport de bug ou une idée directement à la personne qui maintient Space7.",
         openButton: "Envoyer un avis",
         windowTitle: "Envoyer un avis",
         bugTitle: "Bug",
@@ -316,7 +349,7 @@ extension FeedbackStrings {
 
     static let it = FeedbackStrings(
         sectionTitle: "Feedback",
-        sectionCaption: "Invia una segnalazione o un’idea direttamente a chi mantiene Vorssaint.",
+        sectionCaption: "Invia una segnalazione o un’idea direttamente a chi mantiene Space7.",
         openButton: "Invia feedback",
         windowTitle: "Invia feedback",
         bugTitle: "Bug",
@@ -348,7 +381,7 @@ extension FeedbackStrings {
 
     static let ja = FeedbackStrings(
         sectionTitle: "フィードバック",
-        sectionCaption: "不具合の報告や機能のアイデアを Vorssaint の開発者へ直接送信します。",
+        sectionCaption: "不具合の報告や機能のアイデアを Space7 の開発者へ直接送信します。",
         openButton: "フィードバックを送信",
         windowTitle: "フィードバックを送信",
         bugTitle: "不具合",
@@ -380,7 +413,7 @@ extension FeedbackStrings {
 
     static let ko = FeedbackStrings(
         sectionTitle: "피드백",
-        sectionCaption: "버그 신고나 기능 아이디어를 Vorssaint 관리자에게 직접 보냅니다.",
+        sectionCaption: "버그 신고나 기능 아이디어를 Space7 관리자에게 직접 보냅니다.",
         openButton: "피드백 보내기",
         windowTitle: "피드백 보내기",
         bugTitle: "버그",
@@ -412,7 +445,7 @@ extension FeedbackStrings {
 
     static let zhHans = FeedbackStrings(
         sectionTitle: "反馈",
-        sectionCaption: "将错误报告或功能建议直接发送给 Vorssaint 的维护者。",
+        sectionCaption: "将错误报告或功能建议直接发送给 Space7 的维护者。",
         openButton: "发送反馈",
         windowTitle: "发送反馈",
         bugTitle: "错误",
@@ -444,7 +477,7 @@ extension FeedbackStrings {
 
     static let zhTW = FeedbackStrings(
         sectionTitle: "意見回饋",
-        sectionCaption: "將錯誤回報或功能建議直接傳送給 Vorssaint 的維護者。",
+        sectionCaption: "將錯誤回報或功能建議直接傳送給 Space7 的維護者。",
         openButton: "傳送意見",
         windowTitle: "傳送意見",
         bugTitle: "錯誤",
@@ -476,7 +509,7 @@ extension FeedbackStrings {
 
     static let zhHK = FeedbackStrings(
         sectionTitle: "意見回饋",
-        sectionCaption: "將錯誤報告或功能建議直接傳送給 Vorssaint 的維護者。",
+        sectionCaption: "將錯誤報告或功能建議直接傳送給 Space7 的維護者。",
         openButton: "傳送意見",
         windowTitle: "傳送意見",
         bugTitle: "錯誤",
@@ -507,7 +540,7 @@ extension FeedbackStrings {
     )
     static let uk = FeedbackStrings(
         sectionTitle: "Відгук",
-        sectionCaption: "Надішліть звіт про помилку або ідею функції безпосередньо розробнику Vorssaint.",
+        sectionCaption: "Надішліть звіт про помилку або ідею функції безпосередньо розробнику Space7.",
         openButton: "Надіслати відгук",
         windowTitle: "Надіслати відгук",
         bugTitle: "Помилка",

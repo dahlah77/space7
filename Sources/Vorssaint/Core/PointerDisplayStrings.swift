@@ -7,7 +7,7 @@ struct PointerDisplayStrings {
 
     static func localized(_ language: AppLanguage) -> PointerDisplayStrings {
         switch language {
-        case .enUS: return .init(title: "Move pointer to next display", caption: "Puts the pointer in the center of the next display.")
+        case .enUS, .id: return .init(title: "Move pointer to next display", caption: "Puts the pointer in the center of the next display.")
         case .ptBR: return .init(title: "Mover ponteiro para o próximo display", caption: "Coloca o ponteiro no centro do próximo display.")
         case .tr: return .init(title: "İşaretçiyi sonraki ekrana taşı", caption: "İşaretçiyi sonraki ekranın ortasına götürür.")
         case .ru: return .init(title: "Переместить указатель на следующий дисплей", caption: "Ставит указатель в центр следующего дисплея.")

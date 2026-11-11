@@ -37,7 +37,7 @@ final class FanControlService: ObservableObject {
     }
 
     private static var helperVersion: String {
-        Bundle.main.object(forInfoDictionaryKey: "VorssaintFanControlHelperVersion") as? String
+        Bundle.main.object(forInfoDictionaryKey: "Space7FanControlHelperVersion") as? String
             ?? Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
             ?? AppInfo.version
     }

@@ -12,7 +12,7 @@ struct ShelfPromiseDeliveryStrings {
 
     static func localized(_ language: AppLanguage) -> ShelfPromiseDeliveryStrings {
         switch language {
-        case .enUS:
+        case .enUS, .id:
             return .init(
                 failedTitle: "Couldn’t add attachment",
                 failedBody: "The file never finished saving to the shelf.",

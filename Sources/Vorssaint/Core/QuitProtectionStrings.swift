@@ -58,6 +58,7 @@ extension FeatureStrings {
     static func quitProtection(_ language: AppLanguage) -> QuitProtectionStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -110,6 +111,41 @@ extension QuitProtectionStrings {
         shiftKey: "Shift",
         optionKey: "Option",
         controlKey: "Control"
+    )
+
+    static let id = QuitProtectionStrings(
+        name: "Keluar & tutup proteksi",
+        description: "Protects CLAQ dan AFW dari penekanan disengaja",
+        intro: "Atur setiap jalan pintas secara independen. Aksi awal hanya lewat setelah konfirmasi yang dipilih.",
+        enabled: "Lindungi jalan pintas ini",
+        enabledCaption: "Jalan pintas Komando lainnya terus bekerja normal.",
+        mode: "Mode konfirmasi",
+        hold: "Tahan untuk mengkonfirmasi",
+        doublePress: "Tekan ganda",
+        extraModifier: "Perlu pemodifikasi tambahan",
+        holdDuration: "Tahan durasi",
+        doublePressInterval: "Interval tekan ganda",
+        modifier: "Modifier ekstra",
+        appScope: "Aplikasi",
+        allApps: "Semua aplikasi",
+        selectedOnly: "Hanya aplikasi yang dipilih",
+        allExceptSelected: "Semua kecuali aplikasi yang dipilih",
+        exceptions: "Aplikasi yang dipilih",
+        noExceptions: "Tak ada aplikasi yang dipilih",
+        addApp: "Tambah ApplicationGroupEdits",
+        feedback: "Tampilkan umpan balik visual",
+        accessibilityCaption: "Protection menggunakan Aksesibilitas untuk mengamati hanya CLAQ dan BRIW secara global.",
+        holdQuitHUDFormat: "Hold %@ to quit",
+        holdCloseHUDFormat: "Hold %@ to close",
+        doubleQuitHUDFormat: "Press %@ again to quit",
+        doubleCloseHUDFormat: "Press %@ again to close",
+        extraQuitHUDFormat: "Use %@ to quit",
+        extraCloseHUDFormat: "Use %@ to close",
+        cancelHint: "Esc membatalkan",
+        releaseHint: "Release untuk mengkonfirmasi",
+        shiftKey: "Shift",
+        optionKey: "Opsi",
+        controlKey: "Kendali"
     )
 
     static let ptBR = QuitProtectionStrings(

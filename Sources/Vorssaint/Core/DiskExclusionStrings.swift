@@ -16,6 +16,7 @@ extension FeatureStrings {
     static func diskExclusions(_ language: AppLanguage) -> DiskExclusionStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -42,6 +43,15 @@ extension DiskExclusionStrings {
         removeButton: "Remove",
         customPlaceholder: "Drive or volume name",
         caption: "Drives in this list are never unmounted when using Eject all disks."
+    )
+
+    static let id = DiskExclusionStrings(
+        listTitle: "Kandar yang dikecualikan",
+        addButton: "Tambah drive _ BAR _",
+        otherDrive: "Nama kandar lain:",
+        removeButton: "Hapus",
+        customPlaceholder: "Nama kandar atau volume",
+        caption: "Drives dalam daftar ini tidak pernah unmount ketika menggunakan Keluarkan semua disk."
     )
 
     static let ptBR = DiskExclusionStrings(

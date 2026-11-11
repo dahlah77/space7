@@ -14,6 +14,7 @@ extension FeatureStrings {
     static func windowMaximizerExclusions(_ language: AppLanguage) -> WindowMaximizerExclusionStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -38,6 +39,13 @@ extension WindowMaximizerExclusionStrings {
         addButton: "Add an app…",
         removeButton: "Remove",
         caption: "The green button keeps its macOS behavior in these apps, so games, emulators and video players can still enter full screen."
+    )
+
+    static let id = WindowMaximizerExclusionStrings(
+        listTitle: "Pertahankan layar penuh dalam aplikasi ini",
+        addButton: "Tambah aplikasi…",
+        removeButton: "Hapus",
+        caption: "Tombol hijau membuat perilaku machos di aplikasi ini, jadi game, emulator dan pemutar video masih dapat memasuki layar penuh."
     )
 
     static let ptBR = WindowMaximizerExclusionStrings(

@@ -93,7 +93,7 @@ final class NotchMusicService: ObservableObject {
 
     private static var adapter: [String]? {
         guard let script = Bundle.main.url(forResource: "now-playing", withExtension: "pl"),
-              let library = Bundle.main.privateFrameworksURL?.appendingPathComponent("libVorssaintNowPlaying.dylib"),
+              let library = Bundle.main.privateFrameworksURL?.appendingPathComponent("libSpace7NowPlaying.dylib"),
               FileManager.default.fileExists(atPath: library.path) else { return nil }
         return [script.path, library.path]
     }

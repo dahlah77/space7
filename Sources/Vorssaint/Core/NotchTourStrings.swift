@@ -11,7 +11,7 @@ struct NotchTourStrings {
 extension FeatureStrings {
     static func notchTour(_ language: AppLanguage) -> NotchTourStrings {
         switch language {
-        case .enUS: return NotchTourStrings(preview: "Preview for 3.4",
+        case .enUS, .id: return NotchTourStrings(preview: "Preview for 3.4",
             caption: "Control music, timers, volume and brightness. Choose the floating shortcuts you use most.")
         case .ptBR: return NotchTourStrings(preview: "Prévia da 3.4",
             caption: "Controle música, temporizadores, volume e brilho. Escolha os atalhos flutuantes que você mais usa.")

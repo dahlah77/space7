@@ -5,7 +5,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Vorssaint",
+    name: "Space7",
     platforms: [.macOS(.v14)],
     targets: [
         .systemLibrary(
@@ -26,7 +26,7 @@ let package = Package(
             sources: ["RecorderGIFCodec.c", "vendor/cgif/cgif_raw.c"]
         ),
         .executableTarget(
-            name: "Vorssaint",
+            name: "Space7",
             dependencies: ["VMStatisticsCompat", "HIDEventSystem", "CoreAudioTapCompat", "RecorderGIFCodec"],
             path: "Sources/Vorssaint"
         )

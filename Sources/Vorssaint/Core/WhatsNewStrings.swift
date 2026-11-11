@@ -27,7 +27,7 @@ struct WhatsNewStrings {
 extension FeatureStrings {
     static func whatsNew(_ language: AppLanguage) -> WhatsNewStrings {
         switch language {
-        case .enUS:
+        case .enUS, .id:
             return WhatsNewStrings(
                 updatedFromFormat: "Updated from %@",
                 newFeatures: "New features",

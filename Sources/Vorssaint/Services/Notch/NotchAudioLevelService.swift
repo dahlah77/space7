@@ -292,7 +292,7 @@ private final class NotchAudioLevelReader {
         tapped = objects
         var tapID = AudioObjectID(0)
         guard let uuid = createPrivateAudioTap(.stereoMixdown, processes: objects as [NSNumber], deviceUID: nil,
-                                               name: "Vorssaint Island Levels", muteBehavior: .unmuted, id: &tapID)
+                                               name: "Space7 Island Levels", muteBehavior: .unmuted, id: &tapID)
         else { return false }
         self.tapID = tapID
         tapUID = uuid.uuidString
@@ -330,7 +330,7 @@ private final class NotchAudioLevelReader {
     private func buildPipeline() -> Bool {
         guard aggregateID == 0, tapID != 0, let hostUID = Self.hostDeviceUID() else { return false }
         let aggregate: [String: Any] = [
-            kAudioAggregateDeviceNameKey: "Vorssaint Island Levels",
+            kAudioAggregateDeviceNameKey: "Space7 Island Levels",
             kAudioAggregateDeviceUIDKey: UUID().uuidString,
             kAudioAggregateDeviceIsPrivateKey: true,
             kAudioAggregateDeviceMainSubDeviceKey: hostUID,

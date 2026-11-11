@@ -37,6 +37,7 @@ extension FeatureStrings {
     static func mouseExceptions(_ language: AppLanguage) -> MouseExceptionStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -70,6 +71,22 @@ extension MouseExceptionStrings {
         captionFocusFollowsMouse: "Hovering does not change focus or raise a window in these apps.",
         captionSuperKey: "While any of these apps is open, even in the background, Super Key pauses and the chosen key works normally.",
         pausedSuperKey: "Paused while a selected app is open"
+    )
+
+    static let id = MouseExceptionStrings(
+        listTitle: "Apps to leave alone",
+        addButton: "Tambah aplikasi…",
+        removeButton: "Hapus",
+        captionSmoothScroll: "Roda ini terus langkah-langkah polos dalam aplikasi ini, untuk aplikasi yang membacanya dengan cara mereka sendiri, seperti alat 3D dan desain.",
+        captionLinearScroll: "Roda membuat maCO kecepatan tetap memberi aplikasi-aplikasi ini, untuk game dan alat-alat 3D yang menghitung takik sendiri.",
+        captionScrollSpeed: "Roda menjaga kecepatan normal dalam aplikasi ini sementara pemodifikasi kecepatan diadakan.",
+        captionScrollDirection: "Rodanya menyimpan arah yang diberikan MacOS pada aplikasi ini.",
+        captionNavigation: "Tombol samping terus melakukan apa pun aplikasi ini sudah dilakukan dengan mereka.",
+        captionButtonShortcuts: "Tombol tetikus tambahan Anda tetap tenang dalam aplikasi ini, dan pers mencapai mereka sebagai gantinya.",
+        captionMiddleClick: "Klik tiga jari tetap klik normal dalam aplikasi ini.",
+        captionFocusFollowsMouse: "Melindungi tidak mengubah fokus atau meningkatkan jendela dalam aplikasi ini.",
+        captionSuperKey: "Ketika salah satu aplikasi ini terbuka, bahkan di latar belakang, tombol super berhenti dan tombol terpilih bekerja secara normal.",
+        pausedSuperKey: "Ditahan sementara suatu aplikasi yang dipilih dibuka"
     )
 
     static let ptBR = MouseExceptionStrings(

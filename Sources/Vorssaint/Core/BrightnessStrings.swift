@@ -62,6 +62,7 @@ extension FeatureStrings {
     static func brightness(_ language: AppLanguage) -> BrightnessFeatureStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -131,6 +132,58 @@ extension BrightnessFeatureStrings {
         speakersMinimumCaption: "Volume down stops here. Mute still silences the monitor.",
         speakersMaximum: "Maximum volume",
         speakersMaximumCaption: "Volume up stops here."
+    )
+
+    static let id = BrightnessFeatureStrings(
+        pageTitle: "Tampilkan",
+        hubDescription: "Kecerahan dan kontrol daya untuk setiap tampilan",
+        enable: "Tampilan kontrol",
+        enableCaption: "Kecerahan dan nyala atau matikan kontrol untuk built-in dan tampilan eksternal, di sini dan di panel panel menu.",
+        externalCaption: "Tampilan eksternal disesuaikan melalui protokol yang sama seperti tombol mereka sendiri. Ketika koneksi tidak dapat membawanya, seperti dengan adaptasi HDMI, slider meredupkan gambar sebaliknya, sehingga kontrol kecerahan bekerja dengan cara baik.",
+        noDisplays: "Tidak ditemukan tampilan.",
+        displayOff: "Nonaktif",
+        turnOffDisplay: "Matikan tampilan",
+        turnOnDisplay: "Nyalakan tampilan",
+        lastDisplayCaption: "Setidaknya satu tampilan harus tetap menyala.",
+        switchUnavailable: "Tampilan switching tidak tersedia di Mac ini.",
+        switchFailed: "Tak bisa mengubah tampilan ini.",
+        openLidToEnable: "Buka tutup untuk menyalakan built-in display.",
+        keysToggle: "Kunci kecerahan mengikuti penunjuk",
+        keysCaption: "Tombol kecerahan papan tik mengubah tampilan di bawah penunjuk.",
+        keyStep: "Langkah kunci kecerahan",
+        keyStepCaption: "Langkah kecil untuk setiap tekan dari tombol kecerahan dan tampilkan pintasan kecerahan.",
+        keyStepStandard: "Standar",
+        keyStepHalf: "Setengah langkah",
+        keyStepQuarter: "Langkah-langkah seperempat",
+        osdToggle: "Tampilkan kecerahan ketika menyesuaikan",
+        osdCaption: "Tampilkan persentase kecerahan ketika Anda menggunakan tombol kecerahan atau slider.",
+        displayBrightnessShortcuts: "Gunakan pintasan kecerahan tampilan",
+        displayBrightnessShortcutCaption: "Jalan pintas menyesuaikan tampilan primer, atau tampilan di bawah penunjuk ketika penunjuk berikut adalah pada.",
+        displayBrightnessDecrease: "Turunkan kecerahan tampilan",
+        displayBrightnessIncrease: "Tingkatkan kecerahan tampilan",
+        keyboardLight: "Lampu papan tik",
+        keyboardLightCaption: "Nyalakan atau matikan lampu keyboard.",
+        volumeToggle: "Pembicara monitor",
+        volumeCaption: "Monitor dengan pembicara mereka sendiri mendapatkan penggeser volume di sini, melalui saluran yang sama yang digunakan tombol mereka. Tampilkan dengan tidak ada pembicara pernah menunjukkan satu.",
+        volumeLabel: "Volume",
+        mute: "Bisukan",
+        unmute: "Aktifkan Suara",
+        volumeKeysToggle: "Tombol volume menjangkau speaker monitor",
+        volumeKeysCaption: "Ketika suara keluar dari monitor, tombol volume papan ketik memindahkan monitor itu daripada tingkat MacOS tidak dapat berubah.",
+        keyboardBrightnessShortcuts: "Gunakan pintasan kecerahan papan tik",
+        keyboardBrightnessDecrease: "Turunkan kecerahan papan tik",
+        keyboardBrightnessIncrease: "Naikkan kecerahan papan tik",
+        softwareDimming: "Dim gambar",
+        extendedDimming: "Ekstra meredup",
+        islandPromptTitle: "Tampilkan kecerahan di Pulau Dinamis?",
+        islandPromptMessage: "Pulau Dinamis hanya menampilkan perubahan kecerahan saat Pengawasan Tampilan ditampilkan oleh Singapura dalam pengaturan Tampilan.",
+        islandPromptKeepOff: "Jauhkan",
+        speakersStep: "Langkah volume",
+        speakersStepStandard: "Standar (6.25%)",
+        speakersMinimum: "Volume minimum",
+        speakersMinimumCaption: "Volume turun berhenti di sini.",
+        speakersMaximum: "Volume maksimum",
+        speakersMaximumCaption: "Volume up berhenti di sini."
     )
 
     static let ptBR = BrightnessFeatureStrings(

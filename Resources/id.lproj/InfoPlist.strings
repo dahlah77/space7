@@ -1,0 +1,13 @@
+"CFBundleDisplayName" = "Space7";
+"CFBundleName" = "Space7";
+"NSAppleEventsUsageDescription" = "Space7 menggunakan Otomatisasi untuk memindahkan file, membuang item ke Sampah, menjalankan perintah yang Anda minta, dan mengendalikan pemutaran media.";
+"NSAudioCaptureUsageDescription" = "Space7 menggunakan audio tiap aplikasi untuk mengatur volume, visualisasi musik, dan merekam suara sistem saat Anda memulai perekaman layar. Data tetap berada di Mac.";
+"NSBluetoothAlwaysUsageDescription" = "Space7 hanya memakai Bluetooth untuk membaca status baterai perangkat yang terhubung. Data tetap berada di Mac.";
+"NSMicrophoneUsageDescription" = "Space7 merekam mikrofon hanya ketika Anda mengaktifkannya untuk perekaman layar. Audio tetap di Mac kecuali Anda memilih membuat tautan sementara.";
+"NSCameraUsageDescription" = "Space7 menampilkan kamera hanya pada jendela pratinjau yang Anda buka. Tidak ada rekaman yang dibuat atau dikirim.";
+"NSDownloadsFolderUsageDescription" = "Space7 membaca metadata lokal folder Unduhan untuk meninjau, mengatur, atau membuang file WhatsApp yang Anda pilih. Pembersih juga dapat menemukan tangkapan layar lama.";
+"NSDesktopFolderUsageDescription" = "Space7 mengatur unduhan WhatsApp ke folder tujuan yang Anda pilih dan memeriksa tangkapan layar lama jika disimpan di sini.";
+"NSDocumentsFolderUsageDescription" = "Space7 mengatur unduhan WhatsApp ke folder tujuan yang Anda pilih dan memeriksa tangkapan layar lama jika disimpan di sini.";
+"NSNetworkVolumesUsageDescription" = "Space7 mengatur unduhan WhatsApp ke folder tujuan yang Anda pilih.";
+"NSRemovableVolumesUsageDescription" = "Space7 mengatur unduhan WhatsApp ke folder tujuan yang Anda pilih.";
+"NSCalendarsFullAccessUsageDescription" = "Space7 menampilkan jadwal mendatang di area notch. Data kalender tetap berada di Mac.";

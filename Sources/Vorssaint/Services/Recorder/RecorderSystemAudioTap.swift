@@ -196,7 +196,7 @@ final class RecorderSystemAudioTap: @unchecked Sendable {
         var tapID = AudioObjectID(0)
         guard let uuid = createPrivateAudioTap(pid == nil ? .stereoGlobalExcluding : .stereoMixdown,
                                                processes: objects as [NSNumber], deviceUID: nil,
-                                               name: "Vorssaint Recorder", muteBehavior: .unmuted, id: &tapID)
+                                               name: "Space7 Recorder", muteBehavior: .unmuted, id: &tapID)
         else { return false }
         self.tapID = tapID
         tapUID = uuid.uuidString
@@ -280,7 +280,7 @@ final class RecorderSystemAudioTap: @unchecked Sendable {
         guard aggregateID == 0, let clock,
               let hostUID = Self.hostDeviceUID() else { return }
         let aggregate: [String: Any] = [
-            kAudioAggregateDeviceNameKey: "Vorssaint Recorder",
+            kAudioAggregateDeviceNameKey: "Space7 Recorder",
             kAudioAggregateDeviceUIDKey: UUID().uuidString,
             kAudioAggregateDeviceIsPrivateKey: true,
             kAudioAggregateDeviceMainSubDeviceKey: hostUID,

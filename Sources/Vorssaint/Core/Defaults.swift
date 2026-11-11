@@ -710,7 +710,7 @@ enum DefaultsKey {
     static let screenshotClipboardShortcutEnabled = "screenshotClipboardShortcutEnabled"
     static let screenshotClipboardShortcut = "screenshotClipboardShortcut"
     static let screenshotFreeze = "screenshotFreeze"
-    static let screenshotHideVorssaintWindows = "screenshotHideVorssaintWindows"
+    static let screenshotHideVorssaintWindows = "screenshotHideSpace7Windows"
     static let screenshotSaveFolder = "screenshotSaveFolder"
     static let screenshotSaveSubfolder = "screenshotSaveSubfolder"
     static let screenshotFileNamePattern = "screenshotFileNamePattern"

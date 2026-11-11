@@ -15,6 +15,7 @@ extension FeatureStrings {
     static func windowPreviewExclusions(_ language: AppLanguage) -> WindowPreviewExclusionStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -40,6 +41,14 @@ extension WindowPreviewExclusionStrings {
         addButton: "Add an app…",
         removeButton: "Remove",
         caption: "Window thumbnails stop while one of these apps is in front."
+    )
+
+    static let id = WindowPreviewExclusionStrings(
+        sectionTitle: "Kuku jendela",
+        listTitle: "Jeda dalam aplikasi ini",
+        addButton: "Tambah aplikasi…",
+        removeButton: "Hapus",
+        caption: "Jebol jendela berhenti ketika salah satu aplikasi ini berada di depan."
     )
 
     static let ptBR = WindowPreviewExclusionStrings(

@@ -17,7 +17,7 @@ struct ClaudeAccountStrings {
 extension FeatureStrings {
     static func claudeAccount(_ language: AppLanguage) -> ClaudeAccountStrings {
         switch language {
-        case .enUS: return ClaudeAccountStrings(
+        case .enUS, .id: return ClaudeAccountStrings(
             title: "Claude account", defaultAccount: "Default account", chooseFolder: "Choose account folder…",
             explanation: "Choose a profile already signed in to Claude Code. Usage comes from that profile’s sessions, and Claude Code checks its account’s limits. Changing this selection does not change the account in your other apps.",
             invalidFolder: "Choose an existing Claude Code profile folder that belongs to you and contains its own .claude.json file. The folder must not be writable by others, and the file must not be a link.",

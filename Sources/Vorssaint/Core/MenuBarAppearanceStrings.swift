@@ -20,6 +20,7 @@ extension FeatureStrings {
     static func menuBarAppearance(_ language: AppLanguage) -> MenuBarAppearanceStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -50,6 +51,19 @@ extension MenuBarAppearanceStrings {
         highColor: "High color",
         mediumFrom: "Medium from",
         highFrom: "High from"
+    )
+
+    static let id = MenuBarAppearanceStrings(
+        label: "Tampilan penggunaan",
+        values: "Nilai",
+        bars: "Bars",
+        caption: "Batang diterapkan ke CPU, GPU, penggunaan memori dan disk. Pembacaan lain tetap numerik.",
+        customize: "Warna bar dan batas",
+        normalColor: "Warna normal",
+        mediumColor: "Warna sedangDisc Image",
+        highColor: "Warna tinggi",
+        mediumFrom: "Sedang dari",
+        highFrom: "Tinggi dari"
     )
 
     static let ptBR = MenuBarAppearanceStrings(

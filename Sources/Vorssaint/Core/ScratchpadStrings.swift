@@ -59,6 +59,7 @@ extension FeatureStrings {
     static func scratchpad(_ language: AppLanguage) -> ScratchpadFeatureStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -125,6 +126,55 @@ extension ScratchpadFeatureStrings {
         markLink: "Link",
         formatMarks: "Formatting",
         textSize: "Text size"
+    )
+
+    static let id = ScratchpadFeatureStrings(
+        pageTitle: "Scratchpad",
+        hubDescription: "Mengambang bantalan untuk catatan pendek-hidup",
+        panelCaption: "Catatan cepat di tab terpisah",
+        openButton: "Buka scratchpad",
+        placeholder: "Ketik apa saja yang disimpan dengan sendirinya.",
+        copyAll: "Salin semua",
+        copied: "Disalin",
+        exportAction: "Simpan sebagai berkas",
+        exportFailed: "Berkas tidak dapat disimpan",
+        loadFailed: "Catatanmu tidak bisa dibuka.",
+        saveFailed: "Catatan Anda tidak dapat disimpan. Salin di tempat lain sebelum berhenti.",
+        clearAction: "Bersihkan",
+        retentionTitle: "Jelas pada sendiri",
+        retentionNever: "Tidak pernah",
+        retentionDay: "Setelah sehari tidak digunakan",
+        retentionWeek: "Setelah seminggu tidak digunakan",
+        retentionMonth: "Setelah sebulan tidak digunakan",
+        retentionCaption: "pad kosong sendiri setelah teks berjalan yang panjang tanpa edits.",
+        closeOnClickOutside: "Tutup ketika saya klik di luar",
+        keepOpen: "Tetap buka",
+        backgroundOpacity: "Latar belakang pad",
+        backgroundTranslucent: "Translucent",
+        backgroundOpaque: "Opaque",
+        newPad: "Scratchpad baru",
+        padActions: "Aksi Scratchpad",
+        renamePad: "Ubah nama scratchpad",
+        closePad: "Tutup scratchpad",
+        saveName: "Simpan",
+        cancel: "Batal",
+        deletePadMessageFormat: "Delete “%@” and everything in it?",
+        padLimitFormat: "You can keep up to %d scratchpads",
+        previewFormatting: "Tampilkan format",
+        editText: "Sunting teks",
+        taskDone: "Selesai",
+        taskNotDone: "Belum selesai",
+        markBold: "Tebal",
+        markItalic: "Miring",
+        markStrikethrough: "Coret",
+        markHeading: "Tajuk",
+        markBullet: "Daftar peluru",
+        markNumbered: "Daftar bernomor",
+        markQuote: "Kutipan",
+        markCode: "Kode",
+        markLink: "Taut",
+        formatMarks: "Memformat",
+        textSize: "Ukuran teks"
     )
 
     static let ptBR = ScratchpadFeatureStrings(

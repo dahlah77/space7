@@ -4,6 +4,13 @@ dist/
 .build/
 *.dmg
 
+# Space7 local translator and temporary tools
+.venv/
+.translation-model/
+.translation-en-id.argosmodel
+.wheels/
+__pycache__/
+
 # Signing material: never commit private keys or notary credentials
 *.p12
 *.pem

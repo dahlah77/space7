@@ -17,7 +17,7 @@ struct NotchLockScreenStrings {
 extension FeatureStrings {
     static func notchLockScreen(_ language: AppLanguage) -> NotchLockScreenStrings {
         switch language {
-        case .enUS: return NotchLockScreenStrings(
+        case .enUS, .id: return NotchLockScreenStrings(
             title: "Lock Screen",
             show: "Show on the Lock Screen",
             showHint: "Music and the Dynamic Island’s activities, like a timer, AI agents, downloads and your next event, appear above the password field. Anyone who can see your screen can read them.",

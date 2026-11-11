@@ -48,7 +48,7 @@ struct NotchCalendarStrings {
 extension FeatureStrings {
     static func notchCalendar(_ language: AppLanguage) -> NotchCalendarStrings {
         switch language {
-        case .enUS: return NotchCalendarStrings(
+        case .enUS, .id: return NotchCalendarStrings(
             title: "Calendar",
             description: "Browse the month and your upcoming appointments in the Dynamic Island.",
             permission: "Read your calendars to show upcoming appointments. Events stay on this Mac.",

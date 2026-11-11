@@ -20,7 +20,7 @@ struct NotchNotificationStrings {
 extension FeatureStrings {
     static func notchNotifications(_ language: AppLanguage) -> NotchNotificationStrings {
         switch language {
-        case .enUS: return NotchNotificationStrings(
+        case .enUS, .id: return NotchNotificationStrings(
             title: "Notifications",
             description: "New system notifications in the Dynamic Island.",
             privacy: "Show new visible banners only. Messages stay in memory and are cleared when you lock this Mac or turn this off.",

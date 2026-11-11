@@ -352,7 +352,7 @@ private final class MediaRemoteNowPlayingBridge {
     func fetch(completion: @escaping (RadialNowPlayingSnapshot?) -> Void) {
         guard let script = Bundle.main.url(forResource: "now-playing", withExtension: "pl"),
               let library = Bundle.main.privateFrameworksURL?
-                .appendingPathComponent("libVorssaintNowPlaying.dylib"),
+                .appendingPathComponent("libSpace7NowPlaying.dylib"),
               FileManager.default.fileExists(atPath: library.path) else {
             completion(nil)
             return

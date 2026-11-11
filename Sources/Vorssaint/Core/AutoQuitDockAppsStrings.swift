@@ -15,6 +15,7 @@ extension FeatureStrings {
     static func autoQuitDockApps(_ language: AppLanguage) -> AutoQuitDockAppsStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -40,6 +41,14 @@ extension AutoQuitDockAppsStrings {
         addButton: "Add an app…",
         removeButton: "Remove",
         emptyNote: "No menu bar apps available to add."
+    )
+
+    static let id = AutoQuitDockAppsStrings(
+        listTitle: "Aplikasi bilah menu untuk berhenti",
+        caption: "Aplikasi menu bar tetap terbuka secara baku. Apps yang Anda pilih di sini dapat berhenti setelah jendela terakhir mereka menutup ketika mereka berada di Dok. Eksepsi masih tetap tetap terbuka.",
+        addButton: "Tambah aplikasi…",
+        removeButton: "Hapus",
+        emptyNote: "Tak ada aplikasi menu bar yang tersedia untuk ditambahkan."
     )
 
     static let ptBR = AutoQuitDockAppsStrings(

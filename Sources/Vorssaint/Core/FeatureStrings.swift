@@ -7,6 +7,7 @@ enum FeatureStrings {
     static func settingsCategories(_ language: AppLanguage) -> SettingsCategoryStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -27,6 +28,7 @@ enum FeatureStrings {
     static func clipboard(_ language: AppLanguage) -> ClipboardFeatureStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -47,6 +49,7 @@ enum FeatureStrings {
     static func windowLayout(_ language: AppLanguage) -> WindowLayoutFeatureStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -67,6 +70,7 @@ enum FeatureStrings {
     static func monitorAlerts(_ language: AppLanguage) -> MonitorAlertFeatureStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -87,6 +91,7 @@ enum FeatureStrings {
     static func mixer(_ language: AppLanguage) -> MixerFeatureStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -123,6 +128,32 @@ struct MixerFeatureStrings {
     let actions: String
 
     static let enUS = MixerFeatureStrings(hideInactiveApps: "Hide inactive apps", pin: "Pin to Top", unpin: "Unpin", moveUp: "Move Up", moveDown: "Move Down", pinFirst: "Pin to Front", moveLeft: "Move Left", moveRight: "Move Right", arrange: "Hold Command and drag to reorder", actions: "Actions")
+    static let ptBR = MixerFeatureStrings(hideInactiveApps: "Ocultar apps inativos", pin: "Fixar no topo", unpin: "Desafixar", moveUp: "Mover para cima", moveDown: "Mover para baixo", pinFirst: "Fixar no início", moveLeft: "Mover para a esquerda", moveRight: "Mover para a direita", arrange: "Segure Command e arraste para reorganizar", actions: "Ações")
+    static let tr = MixerFeatureStrings(hideInactiveApps: "Etkin olmayan uygulamaları gizle", pin: "En üste sabitle", unpin: "Sabitlemeyi kaldır", moveUp: "Yukarı taşı", moveDown: "Aşağı taşı", pinFirst: "Başa sabitle", moveLeft: "Sola taşı", moveRight: "Sağa taşı", arrange: "Sıralamak için Command tuşunu basılı tutup sürükleyin", actions: "Eylemler")
+    static let ru = MixerFeatureStrings(hideInactiveApps: "Скрывать неактивные приложения", pin: "Закрепить сверху", unpin: "Открепить", moveUp: "Переместить вверх", moveDown: "Переместить вниз", pinFirst: "Закрепить в начале", moveLeft: "Переместить влево", moveRight: "Переместить вправо", arrange: "Удерживайте Command и перетащите для изменения порядка", actions: "Действия")
+    static let es = MixerFeatureStrings(hideInactiveApps: "Ocultar apps inactivas", pin: "Fijar arriba", unpin: "Desfijar", moveUp: "Mover hacia arriba", moveDown: "Mover hacia abajo", pinFirst: "Fijar al principio", moveLeft: "Mover a la izquierda", moveRight: "Mover a la derecha", arrange: "Mantén pulsado Command y arrastra para reordenar", actions: "Acciones")
+    static let sk = MixerFeatureStrings(hideInactiveApps: "Skryť neaktívne aplikácie", pin: "Pripnúť navrch", unpin: "Odopnúť", moveUp: "Presunúť nahor", moveDown: "Presunúť nadol", pinFirst: "Pripnúť dopredu", moveLeft: "Presunúť doľava", moveRight: "Presunúť doprava", arrange: "Podržte Command a presuňte myšou pre zmenu poradia", actions: "Akcie")
+    static let de = MixerFeatureStrings(hideInactiveApps: "Inaktive Apps ausblenden", pin: "Oben anheften", unpin: "Loslösen", moveUp: "Nach oben bewegen", moveDown: "Nach unten bewegen", pinFirst: "Vorne anheften", moveLeft: "Nach links bewegen", moveRight: "Nach rechts bewegen", arrange: "Zum Anordnen Command gedrückt halten und ziehen", actions: "Aktionen")
+    static let fr = MixerFeatureStrings(hideInactiveApps: "Masquer les apps inactives", pin: "Épingler en haut", unpin: "Désépingler", moveUp: "Déplacer vers le haut", moveDown: "Déplacer vers le bas", pinFirst: "Épingler au début", moveLeft: "Déplacer vers la gauche", moveRight: "Déplacer vers la droite", arrange: "Maintenez Command et faites glisser pour réorganiser", actions: "Actions")
+    static let it = MixerFeatureStrings(hideInactiveApps: "Nascondi le app inattive", pin: "Fissa in alto", unpin: "Rimuovi fissaggio", moveUp: "Sposta su", moveDown: "Sposta giù", pinFirst: "Fissa all’inizio", moveLeft: "Sposta a sinistra", moveRight: "Sposta a destra", arrange: "Tieni premuto Command e trascina per riordinare", actions: "Azioni")
+    static let ja = MixerFeatureStrings(hideInactiveApps: "非アクティブなアプリを隠す", pin: "一番上に固定", unpin: "固定を解除", moveUp: "上に移動", moveDown: "下に移動", pinFirst: "先頭に固定", moveLeft: "左に移動", moveRight: "右に移動", arrange: "Commandキーを押しながらドラッグして並べ替え", actions: "アクション")
+    static let ko = MixerFeatureStrings(hideInactiveApps: "비활성 앱 숨기기", pin: "맨 위에 고정", unpin: "고정 해제", moveUp: "위로 이동", moveDown: "아래로 이동", pinFirst: "맨 앞에 고정", moveLeft: "왼쪽으로 이동", moveRight: "오른쪽으로 이동", arrange: "Command 키를 누른 채 드래그하여 순서 변경", actions: "동작")
+    static let zhHans = MixerFeatureStrings(hideInactiveApps: "隐藏不活跃的 App", pin: "置顶", unpin: "取消置顶", moveUp: "上移", moveDown: "下移", pinFirst: "置于最前", moveLeft: "左移", moveRight: "右移", arrange: "按住 Command 并拖移以重新排列", actions: "操作")
+    static let zhTW = MixerFeatureStrings(hideInactiveApps: "隱藏非活躍的 App", pin: "置頂", unpin: "取消置頂", moveUp: "上移", moveDown: "下移", pinFirst: "置於最前", moveLeft: "左移", moveRight: "右移", arrange: "按住 Command 並拖移以重新排列", actions: "動作")
+    static let zhHK = MixerFeatureStrings(hideInactiveApps: "隱藏非活躍的 App", pin: "置頂", unpin: "取消置頂", moveUp: "上移", moveDown: "下移", pinFirst: "置於最前", moveLeft: "左移", moveRight: "右移", arrange: "按住 Command 並拖移以重新排列", actions: "動作")
+}
+
+extension SettingsCategoryStrings {
+    static let ko = SettingsCategoryStrings(
+        essentials: "기본 기능",
+        windowsControls: "윈도우 및 제어",
+        files: "파일",
+        utilities: "유틸리티",
+        app: "앱",
+        appManagement: "앱 관리"
+    )
+
+    static let id = MixerFeatureStrings(hideInactiveApps: "Hide inactive apps", pin: "Pin to Top", unpin: "Unpin", moveUp: "Move Up", moveDown: "Move Down", pinFirst: "Pin to Front", moveLeft: "Move Left", moveRight: "Move Right", arrange: "Hold Command and drag to reorder", actions: "Actions")
     static let ptBR = MixerFeatureStrings(hideInactiveApps: "Ocultar apps inativos", pin: "Fixar no topo", unpin: "Desafixar", moveUp: "Mover para cima", moveDown: "Mover para baixo", pinFirst: "Fixar no início", moveLeft: "Mover para a esquerda", moveRight: "Mover para a direita", arrange: "Segure Command e arraste para reorganizar", actions: "Ações")
     static let tr = MixerFeatureStrings(hideInactiveApps: "Etkin olmayan uygulamaları gizle", pin: "En üste sabitle", unpin: "Sabitlemeyi kaldır", moveUp: "Yukarı taşı", moveDown: "Aşağı taşı", pinFirst: "Başa sabitle", moveLeft: "Sola taşı", moveRight: "Sağa taşı", arrange: "Sıralamak için Command tuşunu basılı tutup sürükleyin", actions: "Eylemler")
     static let ru = MixerFeatureStrings(hideInactiveApps: "Скрывать неактивные приложения", pin: "Закрепить сверху", unpin: "Открепить", moveUp: "Переместить вверх", moveDown: "Переместить вниз", pinFirst: "Закрепить в начале", moveLeft: "Переместить влево", moveRight: "Переместить вправо", arrange: "Удерживайте Command и перетащите для изменения порядка", actions: "Действия")
@@ -289,9 +320,9 @@ extension WindowLayoutFeatureStrings {
         previousDisplay: "이전 디스플레이",
         edgeSnapEnable: "화면 가장자리에 윈도우 맞추기",
         edgeSnapCaption: "켠 다음 윈도우 제목 막대를 아래의 강조된 영역 중 한 곳으로 드래그해 놓으세요. 보조 키를 누른 채 옮긴 윈도우도 맞춰집니다. 영역을 클릭하면 윈도우가 놓일 위치를 고를 수 있습니다.",
-        edgeSnapSystemConflict: "macOS가 같은 가장자리를 사용 중입니다. 데스크탑 및 Dock에서 윈도우 타일링을 끄면 Vorssaint가 사용할 수 있습니다.",
+        edgeSnapSystemConflict: "macOS가 같은 가장자리를 사용 중입니다. 데스크탑 및 Dock에서 윈도우 타일링을 끄면 Space7가 사용할 수 있습니다.",
         edgeSnapOpenSystemSettings: "데스크탑 및 Dock 열기",
-        edgeSnapWaitingForSystem: "Vorssaint에서 켜졌습니다. macOS 타일링을 끄면 바로 작동합니다.",
+        edgeSnapWaitingForSystem: "Space7에서 켜졌습니다. macOS 타일링을 끄면 바로 작동합니다.",
         edgeSnapUseCorner: "이 모서리 사용",
         edgeSnapUseEdge: "이 가장자리 사용",
         edgeSnapAreasOnEdge: "이 가장자리의 영역",
@@ -316,7 +347,7 @@ extension MonitorAlertFeatureStrings {
     static let ko = MonitorAlertFeatureStrings(
         section: "알림",
         caption: "선택한 기준에 도달하면 알림이 표시됩니다. CPU 사용량과 온도 알림은 기준을 약 12초 동안 계속 넘어야 하므로 짧은 급증은 무시됩니다. 반복 설정은 같은 알림의 반복만 제한합니다.",
-        notificationsDenied: "시스템 설정에서 Vorssaint 알림이 꺼져 있어 경고를 표시할 수 없습니다.",
+        notificationsDenied: "시스템 설정에서 Space7 알림이 꺼져 있어 경고를 표시할 수 없습니다.",
         cpu: "높은 CPU 사용량",
         cpuTemperature: "높은 CPU 온도",
         memory: "위험한 메모리 압력",
@@ -1562,9 +1593,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Previous display",
         edgeSnapEnable: "Snap windows at screen edges",
         edgeSnapCaption: "Turn this on and drag a window title bar to a highlighted area below. A window moved by holding the modifier keys snaps too. Click an area to choose where the window goes.",
-        edgeSnapSystemConflict: "macOS is using the same edges. Turn off window tiling in Desktop & Dock so Vorssaint can take over.",
+        edgeSnapSystemConflict: "macOS is using the same edges. Turn off window tiling in Desktop & Dock so Space7 can take over.",
         edgeSnapOpenSystemSettings: "Open Desktop & Dock",
-        edgeSnapWaitingForSystem: "Enabled in Vorssaint. It starts working as soon as macOS tiling is off.",
+        edgeSnapWaitingForSystem: "Enabled in Space7. It starts working as soon as macOS tiling is off.",
         edgeSnapUseCorner: "Use this corner",
         edgeSnapUseEdge: "Use this edge",
         edgeSnapAreasOnEdge: "Areas on this edge",
@@ -1655,9 +1686,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Display anterior",
         edgeSnapEnable: "Encaixar janelas nas bordas da tela",
         edgeSnapCaption: "Ative e arraste a barra de título de uma janela até uma das áreas destacadas abaixo. Uma janela movida segurando as teclas modificadoras também se encaixa. Clique em uma área para escolher onde a janela fica.",
-        edgeSnapSystemConflict: "O macOS está usando as mesmas bordas. Desligue o encaixe em Mesa e Dock para o Vorssaint assumir.",
+        edgeSnapSystemConflict: "O macOS está usando as mesmas bordas. Desligue o encaixe em Mesa e Dock para o Space7 assumir.",
         edgeSnapOpenSystemSettings: "Abrir Mesa e Dock",
-        edgeSnapWaitingForSystem: "Ativado no Vorssaint. Começa a funcionar assim que o encaixe do macOS for desligado.",
+        edgeSnapWaitingForSystem: "Ativado no Space7. Começa a funcionar assim que o encaixe do macOS for desligado.",
         edgeSnapUseCorner: "Usar este canto",
         edgeSnapUseEdge: "Usar esta borda",
         edgeSnapAreasOnEdge: "Áreas nesta borda",
@@ -1748,9 +1779,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Önceki ekran",
         edgeSnapEnable: "Pencereleri ekran kenarlarına yerleştir",
         edgeSnapCaption: "Açın ve pencerenin başlık çubuğunu aşağıdaki vurgulu alanlardan birine sürükleyip bırakın. Değiştirici tuşları basılı tutarak taşınan pencereler de yerleşir. Pencerenin nereye yerleşeceğini seçmek için bir alana tıklayın.",
-        edgeSnapSystemConflict: "macOS aynı kenarları kullanıyor. Vorssaint’ın devralması için Masaüstü ve Dock’taki pencere döşemeyi kapatın.",
+        edgeSnapSystemConflict: "macOS aynı kenarları kullanıyor. Space7’ın devralması için Masaüstü ve Dock’taki pencere döşemeyi kapatın.",
         edgeSnapOpenSystemSettings: "Masaüstü ve Dock’u Aç",
-        edgeSnapWaitingForSystem: "Vorssaint’ta açık. macOS döşemesi kapanınca çalışmaya başlar.",
+        edgeSnapWaitingForSystem: "Space7’ta açık. macOS döşemesi kapanınca çalışmaya başlar.",
         edgeSnapUseCorner: "Bu köşeyi kullan",
         edgeSnapUseEdge: "Bu kenarı kullan",
         edgeSnapAreasOnEdge: "Bu kenardaki alanlar",
@@ -1841,9 +1872,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Предыдущий дисплей",
         edgeSnapEnable: "Привязывать окна к краям экрана",
         edgeSnapCaption: "Включите и перетащите заголовок окна к одной из подсвеченных областей ниже. Окна, перемещаемые с клавишами-модификаторами, тоже привязываются. Нажмите на область, чтобы выбрать, куда встанет окно.",
-        edgeSnapSystemConflict: "macOS использует те же края. Отключите размещение окон в разделе «Рабочий стол и Dock», чтобы их использовал Vorssaint.",
+        edgeSnapSystemConflict: "macOS использует те же края. Отключите размещение окон в разделе «Рабочий стол и Dock», чтобы их использовал Space7.",
         edgeSnapOpenSystemSettings: "Открыть «Рабочий стол и Dock»",
-        edgeSnapWaitingForSystem: "Включено в Vorssaint. Заработает сразу после отключения размещения окон macOS.",
+        edgeSnapWaitingForSystem: "Включено в Space7. Заработает сразу после отключения размещения окон macOS.",
         edgeSnapUseCorner: "Использовать этот угол",
         edgeSnapUseEdge: "Использовать этот край",
         edgeSnapAreasOnEdge: "Области на этом краю",
@@ -1934,9 +1965,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Pantalla anterior",
         edgeSnapEnable: "Ajustar ventanas a los bordes de la pantalla",
         edgeSnapCaption: "Actívalo y arrastra la barra de título de una ventana hasta una de las áreas resaltadas de abajo. Las ventanas que muevas con las teclas de modificación también se ajustan. Haz clic en un área para elegir dónde se coloca la ventana.",
-        edgeSnapSystemConflict: "macOS usa los mismos bordes. Desactiva el ajuste de ventanas en Escritorio y Dock para que Vorssaint tome el control.",
+        edgeSnapSystemConflict: "macOS usa los mismos bordes. Desactiva el ajuste de ventanas en Escritorio y Dock para que Space7 tome el control.",
         edgeSnapOpenSystemSettings: "Abrir Escritorio y Dock",
-        edgeSnapWaitingForSystem: "Activado en Vorssaint. Funcionará en cuanto se desactive el ajuste de ventanas de macOS.",
+        edgeSnapWaitingForSystem: "Activado en Space7. Funcionará en cuanto se desactive el ajuste de ventanas de macOS.",
         edgeSnapUseCorner: "Usar esta esquina",
         edgeSnapUseEdge: "Usar este borde",
         edgeSnapAreasOnEdge: "Áreas en este borde",
@@ -2027,9 +2058,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Predchádzajúci displej",
         edgeSnapEnable: "Priťahovať okná k okrajom obrazovky",
         edgeSnapCaption: "Zapnite to a presuňte záhlavie okna na jednu zo zvýraznených oblastí nižšie. Okno presúvané s podržanými modifikačnými klávesmi sa tiež pritiahne. Kliknutím na oblasť vyberiete, kam sa okno umiestni.",
-        edgeSnapSystemConflict: "macOS používa rovnaké okraje. V Ploche a Docku vypnite dlaždicovanie okien, aby to mohol prevziať Vorssaint.",
+        edgeSnapSystemConflict: "macOS používa rovnaké okraje. V Ploche a Docku vypnite dlaždicovanie okien, aby to mohol prevziať Space7.",
         edgeSnapOpenSystemSettings: "Otvoriť Plochu a Dock",
-        edgeSnapWaitingForSystem: "Zapnuté vo Vorssaint. Začne fungovať hneď po vypnutí dlaždicovania v macOS.",
+        edgeSnapWaitingForSystem: "Zapnuté vo Space7. Začne fungovať hneď po vypnutí dlaždicovania v macOS.",
         edgeSnapUseCorner: "Používať tento roh",
         edgeSnapUseEdge: "Používať tento okraj",
         edgeSnapAreasOnEdge: "Oblasti na tomto okraji",
@@ -2120,9 +2151,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Vorheriges Display",
         edgeSnapEnable: "Fenster an Bildschirmrändern einrasten",
         edgeSnapCaption: "Einschalten und die Titelleiste eines Fensters zu einem der hervorgehobenen Bereiche unten ziehen. Fenster, die du mit gedrückten Sondertasten bewegst, rasten ebenfalls ein. Klicke auf einen Bereich, um festzulegen, wohin das Fenster kommt.",
-        edgeSnapSystemConflict: "macOS verwendet dieselben Ränder. Deaktiviere die Fensteranordnung unter Schreibtisch & Dock, damit Vorssaint übernimmt.",
+        edgeSnapSystemConflict: "macOS verwendet dieselben Ränder. Deaktiviere die Fensteranordnung unter Schreibtisch & Dock, damit Space7 übernimmt.",
         edgeSnapOpenSystemSettings: "Schreibtisch & Dock öffnen",
-        edgeSnapWaitingForSystem: "In Vorssaint aktiviert. Es funktioniert, sobald die Fensteranordnung von macOS aus ist.",
+        edgeSnapWaitingForSystem: "In Space7 aktiviert. Es funktioniert, sobald die Fensteranordnung von macOS aus ist.",
         edgeSnapUseCorner: "Diese Ecke verwenden",
         edgeSnapUseEdge: "Diesen Rand verwenden",
         edgeSnapAreasOnEdge: "Bereiche an diesem Rand",
@@ -2213,9 +2244,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Écran précédent",
         edgeSnapEnable: "Ancrer les fenêtres aux bords de l’écran",
         edgeSnapCaption: "Activez, puis faites glisser la barre de titre d’une fenêtre vers l’une des zones surlignées ci-dessous. Une fenêtre déplacée avec les touches de modification s’ancre aussi. Cliquez sur une zone pour choisir où va la fenêtre.",
-        edgeSnapSystemConflict: "macOS utilise les mêmes bords. Désactivez le placement des fenêtres dans Bureau et Dock pour laisser Vorssaint prendre le relais.",
+        edgeSnapSystemConflict: "macOS utilise les mêmes bords. Désactivez le placement des fenêtres dans Bureau et Dock pour laisser Space7 prendre le relais.",
         edgeSnapOpenSystemSettings: "Ouvrir Bureau et Dock",
-        edgeSnapWaitingForSystem: "Activé dans Vorssaint. Il fonctionnera dès que le placement des fenêtres de macOS sera désactivé.",
+        edgeSnapWaitingForSystem: "Activé dans Space7. Il fonctionnera dès que le placement des fenêtres de macOS sera désactivé.",
         edgeSnapUseCorner: "Utiliser ce coin",
         edgeSnapUseEdge: "Utiliser ce bord",
         edgeSnapAreasOnEdge: "Zones sur ce bord",
@@ -2306,9 +2337,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "Display precedente",
         edgeSnapEnable: "Allinea le finestre ai bordi dello schermo",
         edgeSnapCaption: "Attiva e trascina la barra del titolo di una finestra verso una delle aree evidenziate qui sotto. Anche le finestre spostate tenendo premuti i tasti modificatori si allineano. Fai clic su un’area per scegliere dove va la finestra.",
-        edgeSnapSystemConflict: "macOS usa gli stessi bordi. Disattiva l’affiancamento in Scrivania e Dock per lasciare il controllo a Vorssaint.",
+        edgeSnapSystemConflict: "macOS usa gli stessi bordi. Disattiva l’affiancamento in Scrivania e Dock per lasciare il controllo a Space7.",
         edgeSnapOpenSystemSettings: "Apri Scrivania e Dock",
-        edgeSnapWaitingForSystem: "Attivato in Vorssaint. Funzionerà appena l’affiancamento di macOS sarà disattivato.",
+        edgeSnapWaitingForSystem: "Attivato in Space7. Funzionerà appena l’affiancamento di macOS sarà disattivato.",
         edgeSnapUseCorner: "Usa questo angolo",
         edgeSnapUseEdge: "Usa questo bordo",
         edgeSnapAreasOnEdge: "Aree su questo bordo",
@@ -2399,9 +2430,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "前のディスプレイ",
         edgeSnapEnable: "画面の端にウインドウをスナップ",
         edgeSnapCaption: "オンにして、ウインドウのタイトルバーを下のハイライトされた領域のいずれかへドラッグします。修飾キーを押しながら移動したウインドウもスナップします。領域をクリックすると、ウインドウの配置先を選べます。",
-        edgeSnapSystemConflict: "macOSが同じ画面端を使用しています。Vorssaintで使うには「デスクトップとDock」でウインドウのタイル表示をオフにしてください。",
+        edgeSnapSystemConflict: "macOSが同じ画面端を使用しています。Space7で使うには「デスクトップとDock」でウインドウのタイル表示をオフにしてください。",
         edgeSnapOpenSystemSettings: "デスクトップとDockを開く",
-        edgeSnapWaitingForSystem: "Vorssaintでオンになっています。macOSのタイル表示をオフにすると動作します。",
+        edgeSnapWaitingForSystem: "Space7でオンになっています。macOSのタイル表示をオフにすると動作します。",
         edgeSnapUseCorner: "この隅を使用",
         edgeSnapUseEdge: "この端を使用",
         edgeSnapAreasOnEdge: "この端の領域",
@@ -2492,9 +2523,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "上一台显示器",
         edgeSnapEnable: "将窗口贴靠到屏幕边缘",
         edgeSnapCaption: "开启后，将窗口标题栏拖到下方任一高亮区域即可。按住修饰键移动的窗口也会贴靠。点按区域可选择窗口的放置位置。",
-        edgeSnapSystemConflict: "macOS 正在使用相同的屏幕边缘。请在“桌面与程序坞”中关闭窗口平铺，让 Vorssaint 接管。",
+        edgeSnapSystemConflict: "macOS 正在使用相同的屏幕边缘。请在“桌面与程序坞”中关闭窗口平铺，让 Space7 接管。",
         edgeSnapOpenSystemSettings: "打开桌面与程序坞",
-        edgeSnapWaitingForSystem: "已在 Vorssaint 中开启。关闭 macOS 窗口平铺后即可使用。",
+        edgeSnapWaitingForSystem: "已在 Space7 中开启。关闭 macOS 窗口平铺后即可使用。",
         edgeSnapUseCorner: "使用此角落",
         edgeSnapUseEdge: "使用此边缘",
         edgeSnapAreasOnEdge: "此边缘的区域",
@@ -2585,9 +2616,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "上一台顯示器",
         edgeSnapEnable: "將視窗貼齊螢幕邊緣",
         edgeSnapCaption: "開啟後，將視窗標題列拖到下方任一醒目區域即可。按住輔助鍵移動的視窗也會貼齊。按一下區域可選擇視窗的擺放位置。",
-        edgeSnapSystemConflict: "macOS 正在使用相同的螢幕邊緣。請在「桌面與 Dock」關閉視窗並排，讓 Vorssaint 接管。",
+        edgeSnapSystemConflict: "macOS 正在使用相同的螢幕邊緣。請在「桌面與 Dock」關閉視窗並排，讓 Space7 接管。",
         edgeSnapOpenSystemSettings: "開啟桌面與 Dock",
-        edgeSnapWaitingForSystem: "已在 Vorssaint 中開啟。關閉 macOS 視窗並排後即可使用。",
+        edgeSnapWaitingForSystem: "已在 Space7 中開啟。關閉 macOS 視窗並排後即可使用。",
         edgeSnapUseCorner: "使用此角落",
         edgeSnapUseEdge: "使用此邊緣",
         edgeSnapAreasOnEdge: "此邊緣的區域",
@@ -2678,9 +2709,9 @@ struct WindowLayoutFeatureStrings {
         previousDisplay: "上一部顯示器",
         edgeSnapEnable: "將視窗貼齊螢幕邊緣",
         edgeSnapCaption: "開啟後，將視窗標題列拖到下方任一醒目區域即可。按住輔助鍵移動的視窗也會貼齊。按一下區域可選擇視窗的擺放位置。",
-        edgeSnapSystemConflict: "macOS 正在使用相同的螢幕邊緣。請在「桌面與 Dock」關閉視窗並排，讓 Vorssaint 接管。",
+        edgeSnapSystemConflict: "macOS 正在使用相同的螢幕邊緣。請在「桌面與 Dock」關閉視窗並排，讓 Space7 接管。",
         edgeSnapOpenSystemSettings: "開啟桌面與 Dock",
-        edgeSnapWaitingForSystem: "已在 Vorssaint 中開啟。關閉 macOS 視窗並排後即可使用。",
+        edgeSnapWaitingForSystem: "已在 Space7 中開啟。關閉 macOS 視窗並排後即可使用。",
         edgeSnapUseCorner: "使用此角落",
         edgeSnapUseEdge: "使用此邊緣",
         edgeSnapAreasOnEdge: "此邊緣的區域",
@@ -2738,7 +2769,7 @@ struct MonitorAlertFeatureStrings {
     static let enUS = MonitorAlertFeatureStrings(
         section: "Alerts",
         caption: "Alerts fire when their selected limits are reached. CPU use and temperature alerts ignore spikes shorter than about 12 seconds. The repeat setting only limits repeats of the same alert.",
-        notificationsDenied: "Notifications for Vorssaint are off in System Settings, so alerts cannot appear.",
+        notificationsDenied: "Notifications for Space7 are off in System Settings, so alerts cannot appear.",
         cpu: "High CPU",
         cpuTemperature: "High CPU temperature",
         memory: "Critical memory pressure",
@@ -2773,7 +2804,7 @@ struct MonitorAlertFeatureStrings {
     static let ptBR = MonitorAlertFeatureStrings(
         section: "Alertas",
         caption: "Os alertas disparam quando os limites escolhidos são atingidos. O uso da CPU e os alertas de temperatura ignoram picos com menos de 12 segundos. A opção de repetição só limita o mesmo alerta.",
-        notificationsDenied: "As notificações do Vorssaint estão desativadas nos Ajustes do Sistema, então os alertas não aparecem.",
+        notificationsDenied: "As notificações do Space7 estão desativadas nos Ajustes do Sistema, então os alertas não aparecem.",
         cpu: "CPU alta",
         cpuTemperature: "Temperatura alta da CPU",
         memory: "Pressão de memória crítica",
@@ -2808,7 +2839,7 @@ struct MonitorAlertFeatureStrings {
     static let tr = MonitorAlertFeatureStrings(
         section: "Uyarılar",
         caption: "Uyarılar seçilen eşiklere ulaşıldığında gönderilir. CPU kullanımı ve sıcaklık uyarıları yaklaşık 12 saniyeden kısa sıçramaları yok sayar. Tekrarlama ayarı yalnızca aynı uyarının tekrarlanmasını sınırlar.",
-        notificationsDenied: "Sistem Ayarları’nda Vorssaint bildirimleri kapalı, bu yüzden uyarılar görünemez.",
+        notificationsDenied: "Sistem Ayarları’nda Space7 bildirimleri kapalı, bu yüzden uyarılar görünemez.",
         cpu: "Yüksek CPU",
         cpuTemperature: "Yüksek CPU sıcaklığı",
         memory: "Kritik bellek basıncı",
@@ -2843,7 +2874,7 @@ struct MonitorAlertFeatureStrings {
     static let ru = MonitorAlertFeatureStrings(
         section: "Оповещения",
         caption: "Оповещения появляются при достижении выбранных порогов. Загрузка CPU и температурные оповещения игнорируют скачки короче примерно 12 секунд. Настройка повтора ограничивает только повтор одного и того же оповещения.",
-        notificationsDenied: "Уведомления Vorssaint выключены в Системных настройках, поэтому оповещения не появятся.",
+        notificationsDenied: "Уведомления Space7 выключены в Системных настройках, поэтому оповещения не появятся.",
         cpu: "Высокая нагрузка CPU",
         cpuTemperature: "Высокая температура CPU",
         memory: "Критическое давление памяти",
@@ -2878,7 +2909,7 @@ struct MonitorAlertFeatureStrings {
     static let es = MonitorAlertFeatureStrings(
         section: "Alertas",
         caption: "Las alertas aparecen cuando se alcanzan los límites elegidos. El uso de CPU y las alertas de temperatura ignoran los picos de menos de unos 12 segundos. El ajuste de repetición solo limita la repetición de la misma alerta.",
-        notificationsDenied: "Las notificaciones de Vorssaint están desactivadas en Ajustes del Sistema, así que las alertas no aparecen.",
+        notificationsDenied: "Las notificaciones de Space7 están desactivadas en Ajustes del Sistema, así que las alertas no aparecen.",
         cpu: "CPU alta",
         cpuTemperature: "Temperatura de CPU alta",
         memory: "Presión de memoria crítica",
@@ -2913,7 +2944,7 @@ struct MonitorAlertFeatureStrings {
     static let sk = MonitorAlertFeatureStrings(
         section: "Hlásenia",
         caption: "Hlásenia sa spustia po dosiahnutí vybraných limitov. Hlásenia o vyťažení a teplote CPU ignorujú výkyvy kratšie ako približne 12 sekúnd. Nastavenie opakovania obmedzuje iba opakovanie toho istého hlásenia.",
-        notificationsDenied: "Hlásenia pre Vorssaint sú vypnuté v Systémových nastaveniach, takže sa nemôžu zobraziť.",
+        notificationsDenied: "Hlásenia pre Space7 sú vypnuté v Systémových nastaveniach, takže sa nemôžu zobraziť.",
         cpu: "Vysoké vyťaženie CPU",
         cpuTemperature: "Vysoká teplota CPU",
         memory: "Kritický tlak na pamäť",
@@ -2948,7 +2979,7 @@ struct MonitorAlertFeatureStrings {
     static let de = MonitorAlertFeatureStrings(
         section: "Warnungen",
         caption: "Warnungen erscheinen, wenn die gewählten Grenzwerte erreicht werden. CPU-Auslastung und Temperaturwarnungen ignorieren Spitzen, die kürzer als etwa 12 Sekunden dauern. Die Wiederholungseinstellung begrenzt nur die Wiederholung derselben Warnung.",
-        notificationsDenied: "Mitteilungen für Vorssaint sind in den Systemeinstellungen aus, daher können keine Warnungen erscheinen.",
+        notificationsDenied: "Mitteilungen für Space7 sind in den Systemeinstellungen aus, daher können keine Warnungen erscheinen.",
         cpu: "Hohe CPU",
         cpuTemperature: "Hohe CPU-Temperatur",
         memory: "Kritischer Speicherdruck",
@@ -2983,7 +3014,7 @@ struct MonitorAlertFeatureStrings {
     static let fr = MonitorAlertFeatureStrings(
         section: "Alertes",
         caption: "Les alertes apparaissent lorsque les seuils choisis sont atteints. L’utilisation du processeur et les alertes de température ignorent les pics de moins de 12 secondes environ. Le réglage de répétition limite uniquement la répétition de la même alerte.",
-        notificationsDenied: "Les notifications de Vorssaint sont désactivées dans Réglages Système, les alertes ne peuvent donc pas apparaître.",
+        notificationsDenied: "Les notifications de Space7 sont désactivées dans Réglages Système, les alertes ne peuvent donc pas apparaître.",
         cpu: "CPU élevé",
         cpuTemperature: "Température CPU élevée",
         memory: "Pression mémoire critique",
@@ -3018,7 +3049,7 @@ struct MonitorAlertFeatureStrings {
     static let it = MonitorAlertFeatureStrings(
         section: "Avvisi",
         caption: "Gli avvisi compaiono quando vengono raggiunte le soglie scelte. L’uso della CPU e gli avvisi di temperatura ignorano i picchi più brevi di circa 12 secondi. L’impostazione di ripetizione limita solo la ripetizione dello stesso avviso.",
-        notificationsDenied: "Le notifiche di Vorssaint sono disattivate in Impostazioni di Sistema, quindi gli avvisi non compaiono.",
+        notificationsDenied: "Le notifiche di Space7 sono disattivate in Impostazioni di Sistema, quindi gli avvisi non compaiono.",
         cpu: "CPU alta",
         cpuTemperature: "Temperatura CPU alta",
         memory: "Pressione memoria critica",
@@ -3053,7 +3084,7 @@ struct MonitorAlertFeatureStrings {
     static let ja = MonitorAlertFeatureStrings(
         section: "アラート",
         caption: "選択したしきい値に達すると通知します。CPU 使用率と温度の通知は約 12 秒未満の短い急上昇を無視します。繰り返し設定は同じ通知の繰り返しだけを制限します。",
-        notificationsDenied: "システム設定でVorssaintの通知がオフのため、アラートは表示されません。",
+        notificationsDenied: "システム設定でSpace7の通知がオフのため、アラートは表示されません。",
         cpu: "CPU 高負荷",
         cpuTemperature: "CPU 温度が高い",
         memory: "メモリ圧迫が深刻",
@@ -3088,7 +3119,7 @@ struct MonitorAlertFeatureStrings {
     static let zhHans = MonitorAlertFeatureStrings(
         section: "提醒",
         caption: "达到所选阈值时会发出提醒。CPU 使用率和温度提醒会忽略短于约 12 秒的短暂峰值。重复设置仅限制同一提醒的重复频率。",
-        notificationsDenied: "Vorssaint 的通知已在系统设置中关闭，警报无法显示。",
+        notificationsDenied: "Space7 的通知已在系统设置中关闭，警报无法显示。",
         cpu: "CPU 过高",
         cpuTemperature: "CPU 温度过高",
         memory: "内存压力严重",
@@ -3123,7 +3154,7 @@ struct MonitorAlertFeatureStrings {
     static let zhTW = MonitorAlertFeatureStrings(
         section: "提醒",
         caption: "達到所選門檻時會發出提醒。CPU 使用率和溫度提醒會忽略短於約 12 秒的短暫尖峰。重複設定只限制相同提醒的重複頻率。",
-        notificationsDenied: "Vorssaint 的通知已在系統設定中關閉，警示無法顯示。",
+        notificationsDenied: "Space7 的通知已在系統設定中關閉，警示無法顯示。",
         cpu: "CPU 使用率過高",
         cpuTemperature: "CPU 溫度過高",
         memory: "記憶體壓力過高",
@@ -3158,7 +3189,7 @@ struct MonitorAlertFeatureStrings {
     static let zhHK = MonitorAlertFeatureStrings(
         section: "提示",
         caption: "達到所選門檻時會發出提示。CPU 使用率和溫度提示會忽略短於約 12 秒的短暫尖峰。重複設定只限制相同提示的重複頻率。",
-        notificationsDenied: "Vorssaint 的通知已在系統設定中關閉，警示無法顯示。",
+        notificationsDenied: "Space7 的通知已在系統設定中關閉，警示無法顯示。",
         cpu: "CPU 使用率過高",
         cpuTemperature: "CPU 溫度過高",
         memory: "記憶體壓力過高",
@@ -3342,9 +3373,9 @@ extension WindowLayoutFeatureStrings {
         previousDisplay: "Попередній дисплей",
         edgeSnapEnable: "Прилипати вікнами до країв екрана",
         edgeSnapCaption: "Увімкніть цю функцію й перетягніть заголовок вікна до однієї з підсвічених областей нижче. Вікна, переміщені з утриманням клавіш-модифікаторів, теж прилипають. Натисніть область, щоб вибрати, куди стане вікно.",
-        edgeSnapSystemConflict: "macOS використовує ті самі краї. Вимкніть мозаїку вікон у розділі «Робочий стіл і Dock», щоб Vorssaint міг керувати ними.",
+        edgeSnapSystemConflict: "macOS використовує ті самі краї. Вимкніть мозаїку вікон у розділі «Робочий стіл і Dock», щоб Space7 міг керувати ними.",
         edgeSnapOpenSystemSettings: "Відкрити «Робочий стіл і Dock»",
-        edgeSnapWaitingForSystem: "Увімкнено в Vorssaint. Почне працювати, щойно мозаїку macOS буде вимкнено.",
+        edgeSnapWaitingForSystem: "Увімкнено в Space7. Почне працювати, щойно мозаїку macOS буде вимкнено.",
         edgeSnapUseCorner: "Використовувати цей кут",
         edgeSnapUseEdge: "Використовувати цей край",
         edgeSnapAreasOnEdge: "Області на цьому краю",
@@ -3369,7 +3400,7 @@ extension MonitorAlertFeatureStrings {
     static let uk = MonitorAlertFeatureStrings(
         section: "Сповіщення",
         caption: "Сповіщення спрацьовують, коли досягаються вибрані межі. Сповіщення про використання й температуру CPU ігнорують сплески коротші за 12 секунд. Налаштування повтору обмежує лише повтори того самого сповіщення.",
-        notificationsDenied: "Сповіщення Vorssaint вимкнено в Системних параметрах, тому вони не можуть з’являтися.",
+        notificationsDenied: "Сповіщення Space7 вимкнено в Системних параметрах, тому вони не можуть з’являтися.",
         cpu: "Високий CPU",
         cpuTemperature: "Висока температура CPU",
         memory: "Критичний тиск пам’яті",

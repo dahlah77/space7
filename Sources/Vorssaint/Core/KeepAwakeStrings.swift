@@ -48,6 +48,7 @@ extension FeatureStrings {
     static func keepAwakeAutomation(_ language: AppLanguage) -> KeepAwakeAutomationStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -68,6 +69,7 @@ extension FeatureStrings {
     static func keepAwakeDisplaySleep(_ language: AppLanguage) -> KeepAwakeDisplaySleepStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -90,6 +92,11 @@ extension KeepAwakeDisplaySleepStrings {
     static let enUS = KeepAwakeDisplaySleepStrings(
         allowDisplaySleep: "Allow the display to sleep",
         allowDisplaySleepCaption: "Keeps the Mac awake while the display follows its normal sleep timer."
+    )
+
+    static let id = KeepAwakeDisplaySleepStrings(
+        allowDisplaySleep: "Izinkan tampilan untuk tidur",
+        allowDisplaySleepCaption: "Membuat Mac terjaga sementara tampilan berikut timer tidur normal."
     )
 
     static let ptBR = KeepAwakeDisplaySleepStrings(

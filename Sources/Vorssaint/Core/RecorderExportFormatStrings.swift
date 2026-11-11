@@ -12,7 +12,7 @@ struct RecorderExportFormatStrings {
 extension FeatureStrings {
     static func recorderExportFormat(_ language: AppLanguage) -> RecorderExportFormatStrings {
         switch language {
-        case .enUS:
+        case .enUS, .id:
             return RecorderExportFormatStrings(
                 format: "Export format",
                 video: "Video",

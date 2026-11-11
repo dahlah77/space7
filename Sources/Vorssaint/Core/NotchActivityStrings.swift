@@ -48,7 +48,7 @@ struct NotchActivityStrings {
 extension FeatureStrings {
     static func notchActivities(_ language: AppLanguage) -> NotchActivityStrings {
         switch language {
-        case .enUS: return NotchActivityStrings(
+        case .enUS, .id: return NotchActivityStrings(
             timer: "Timer",
             timerDescription: "Timers, a stopwatch and focused work sessions in the Dynamic Island.",
             pomodoro: "Pomodoro",

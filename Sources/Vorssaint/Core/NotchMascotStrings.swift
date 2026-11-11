@@ -139,7 +139,7 @@ struct NotchMascotStrings {
 extension FeatureStrings {
     static func notchMascot(_ language: AppLanguage) -> NotchMascotStrings {
         switch language {
-        case .enUS: return NotchMascotStrings(
+        case .enUS, .id: return NotchMascotStrings(
             title: "Companion",
             hint: "A little friend who lives in the Dynamic Island. It rests there when nothing else is showing, and comes out over music and activities to say hello and react to what happens.",
             visits: "Appear now and then",

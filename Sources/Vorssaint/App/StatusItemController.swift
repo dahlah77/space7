@@ -57,9 +57,9 @@ final class StatusItemController {
     /// so bind() only touches it once the feature is actually available,
     /// rather than for every launch regardless of whether anyone uses it.
     private var clipboardBindingsInstalled = false
-    private static let mainAutosaveName = "VorssaintMenuBarItem"
-    private static let metricAutosavePrefix = "VorssaintMetric"
-    private static let clipboardPreviewAutosaveName = "VorssaintClipboardPreview"
+    private static let mainAutosaveName = "Space7MenuBarItem"
+    private static let metricAutosavePrefix = "Space7Metric"
+    private static let clipboardPreviewAutosaveName = "Space7ClipboardPreview"
     private static let emptyStatusImage = NSImage()
 
     /// One separate menu bar item: a metric, or a metric with its temperature

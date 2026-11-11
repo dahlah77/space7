@@ -5,10 +5,10 @@ import Foundation
 
 /// Static identity of the app, shared by UI, notifications and tooling.
 enum AppInfo {
-    static let name = "Vorssaint"
-    static let copyright = "© 2026 Vorssaint"
-    static let websiteURL = URL(string: "https://vorssaint.com")!
-    static let repositoryURL = URL(string: "https://github.com/vorssaint/vorssaint-utils")!
+    static let name = "Space7"
+    static let copyright = "© 2026 Space7 · Berdasarkan Vorssaint (GPL-3.0-or-later)"
+    static let websiteURL = URL(string: "https://github.com/dahlah77/space7")!
+    static let repositoryURL = URL(string: "https://github.com/dahlah77/space7")!
     static let coffeeURL = URL(string: "https://buymeacoffee.com/vorssaint")!
     static let discordURL = URL(string: "https://discord.gg/M6BwWH4BJp")!
     static let socialURL = URL(string: "https://x.com/vorssaint")!
@@ -39,6 +39,6 @@ enum AppInfo {
     /// this into the Developer bundle only, so you can confirm at a glance that the
     /// running dev app matches the source you are about to change. nil in the official app.
     static var buildCommit: String? {
-        Bundle.main.object(forInfoDictionaryKey: "VorssaintBuildCommit") as? String
+        Bundle.main.object(forInfoDictionaryKey: "Space7BuildCommit") as? String
     }
 }

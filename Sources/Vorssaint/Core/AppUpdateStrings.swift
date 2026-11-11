@@ -62,6 +62,7 @@ extension FeatureStrings {
     static func appUpdates(_ language: AppLanguage) -> AppUpdateStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -133,6 +134,60 @@ extension AppUpdateStrings {
         noVisibleUpdates: "No updates outside your rules",
         uncomparableVersions: "Versions not compared",
         uncomparableVersionsNote: "No update is shown when an app’s own version can’t be compared with the catalog. Check for updates in the app itself."
+    )
+
+    static let id = AppUpdateStrings(
+        pageTitle: "Pemutakhiran App",
+        hubDescription: "Cari dan pasang pemutakhiran bagi aplikasi yang Anda miliki",
+        caption: "Cari versi baru dari aplikasi di Mac ini dan membantu Anda menyelesaikan setiap update dari sumber aslinya.",
+        panelCaption: "Lihat aplikasi yang memiliki versi yang lebih baru",
+        checkNow: "Periksa sekarang",
+        checking: "Memeriksa",
+        lastCheckFormat: "Last checked %@",
+        neverChecked: "Belum diperiksa",
+        upToDate: "Tak ditemukan pemutakhiran",
+        partialUpToDate: "Tak ditemukan pemutakhiran pada pemeriksaan parsial ini",
+        coverageNote: "Memeriksa sumber asli aplikasi yang terpasang dan katalog publik. Pemutakhiran memasang melalui sumber asli mereka.",
+        selectAll: "Pilih semua",
+        clearSelection: "Bersihkan",
+        updateSelectedFormat: "Update %d",
+        updateOne: "Perbarui",
+        openAppStore: "Buka Toko App",
+        appStoreBadge: "Toko App",
+        storeHint: "Buka Toko App, dimana pemutakhiran ini dipasang",
+        frequencyLabel: "Periksa di latar belakang",
+        frequencyOff: "Nonaktif",
+        frequencyDaily: "Setiap hari",
+        frequencyWeekly: "Setiap minggu",
+        nextCheckFormat: "Next check %@",
+        notifyToggle: "Beritahu saya ketika sebuah aplikasi memiliki update",
+        includeStoreToggle: "Sertakan aplikasi dari App Store",
+        includeStoreCaption: "Memeriksa versi penyimpanan menggunakan daerah Mac Casps ini. Apple menginstal pemutakhiran ini.",
+        packageMissing: "Homebrew belum terpasang, jadi aplikasi belum dapat diperbarui dari sini.",
+        notificationBodyFormat: "%@ apps have a newer version.",
+        notificationBodyOne: "Satu aplikasi memiliki versi yang lebih baru.",
+        showInPanel: "Tampilkan di panel",
+        homebrewBadge: "Minuman rumah",
+        sourcesTitle: "Sumber",
+        includeHomebrewToggle: "Sertakan aplikasi Homebrew",
+        onlineBadge: "Daring",
+        openApp: "Buka",
+        openAppHint: "Buka aplikasi sehingga updater sendiri dapat menyelesaikan",
+        includeOnlineToggle: "Termasuk aplikasi lain yang terpasang",
+        includeOnlineCaption: "Memeriksa langsung dengan pengembang aplikasi ketika didukung, kemudian menggunakan katalog publik. Aplikasi Jesps sendiri updater menginstal pemutakhiran.",
+        incompleteCheck: "Periksa tidak lengkap",
+        onlineUnavailable: "Pemeriksaan daring tidak dapat diselesaikan. Hasil lain masih ditampilkan.",
+        skipVersionFormat: "Skip version %@",
+        excludeApp: "Jangan periksa aplikasi ini",
+        rulesTitle: "Perbarui eksepsi",
+        addException: "Tambahkan aplikasi yang tak boleh diperiksa",
+        skippedVersionFormat: "Skipped version %@",
+        excludedApp: "Tidak diperiksa sampai aturan ini dihapus",
+        removeRule: "Hapus",
+        rulesHint: "Melewatkan versi masih memungkinkan rilis baru. Setelah menghapus sebuah exclusion aplikasi, gunakan Periksa sekarang untuk menyegarkannya.",
+        noVisibleUpdates: "Tidak ada pemutakhiran di luar aturan Anda",
+        uncomparableVersions: "Versions tidak dibandingkan",
+        uncomparableVersionsNote: "Tidak ada pemutakhiran yang ditampilkan ketika sebuah versi sendiri aplikasi Aspes tidak dapat dibandingkan dengan katalog. Periksa pemutakhiran di app itu sendiri."
     )
 
     static let ptBR = AppUpdateStrings(

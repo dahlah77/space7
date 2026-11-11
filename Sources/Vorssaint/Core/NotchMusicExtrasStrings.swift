@@ -56,7 +56,7 @@ struct NotchMusicExtrasStrings {
 extension FeatureStrings {
     static func notchMusicExtras(_ language: AppLanguage) -> NotchMusicExtrasStrings {
         switch language {
-        case .enUS: return NotchMusicExtrasStrings(
+        case .enUS, .id: return NotchMusicExtrasStrings(
             lyrics: "Lyrics",
             lyricsDescription: "Follow the lyrics of the current song in the Dynamic Island.",
             enableLyrics: "Show lyrics",

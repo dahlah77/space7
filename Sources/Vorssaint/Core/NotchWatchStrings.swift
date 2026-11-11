@@ -59,7 +59,7 @@ struct NotchWatchStrings {
 extension FeatureStrings {
     static func notchWatch(_ language: AppLanguage) -> NotchWatchStrings {
         switch language {
-        case .enUS: return NotchWatchStrings(
+        case .enUS, .id: return NotchWatchStrings(
             title: "Watch",
             description: "Turn any part of any window into a live activity in the Dynamic Island, with an alert when it changes, finishes or shows what you are waiting for.",
             setupHint: "Choose any part of a window, like a progress bar, a build status or a score. The island reads it for you and tells you when it changes.",

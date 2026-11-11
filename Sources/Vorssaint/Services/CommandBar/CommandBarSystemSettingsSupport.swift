@@ -96,7 +96,7 @@ enum CommandBarSystemSettingsSupport {
     /// the pair that would silently fall back to English if this guessed.
     static func resourceFolder(for language: AppLanguage) -> String {
         switch language {
-        case .enUS: return "en"
+        case .enUS, .id: return "en"
         case .ptBR: return "pt_BR"
         case .tr: return "tr"
         case .ru: return "ru"

@@ -30,6 +30,7 @@ extension FeatureStrings {
     static func diskImageInstaller(_ language: AppLanguage) -> DiskImageInstallerStrings {
         switch language {
         case .enUS: return .enUS
+        case .id: return .id
         case .ptBR: return .ptBR
         case .tr: return .tr
         case .ru: return .ru
@@ -68,6 +69,29 @@ extension DiskImageInstallerStrings {
         alreadyInstalledBodyFormat: "%@ is already in Applications.",
         trashDownloadOption: "Move the download to Trash",
         revealAppOption: "Show the installed app in Finder",
+        installedKeptDownloadBodyFormat: "%@ is ready in %@. The disk image was ejected and its download kept.",
+        installingFormat: "Installing %@…"
+    )
+
+    static let id = DiskImageInstallerStrings(
+        title: "Pemasang berkas salinan diska",
+        hubDescription: "Pasang aplikasi tunggal di dalam image diska dan bersihkan pengunduhan",
+        useUserApplications: "Pasang di folder Aplikasi di dalam folder rumah Anda",
+        applicationsFolder: "Folder Aplikasi",
+        userApplicationsFolder: "Folder Aplikasi di dalam folder rumah Anda",
+        promptTitle: "Pasang aplikasi ini?",
+        promptBodyFormat: "%@ will be copied to %@ and the disk image ejected.",
+        installButton: "Pasang",
+        installedTitle: "App terpasang",
+        installedBodyFormat: "%@ is ready in %@. The disk image was ejected and its download moved to Trash.",
+        installedKeepingMountBodyFormat: "%@ is installed in %@, but the disk image could not be ejected. Its download was kept.",
+        installedKeepingDownloadBodyFormat: "%@ is installed in %@ and the disk image was ejected, but its download could not be moved to Trash.",
+        failedTitle: "Tak bisa memasang",
+        failedBody: "Tidak ada yang berubah. Anda masih dapat menyeret aplikasi ke Aplikasi.",
+        verificationFailedBody: "Mac ini tidak dapat memverifikasi aplikasi, sehingga tidak ada yang diinstal.",
+        alreadyInstalledBodyFormat: "%@ is already in Applications.",
+        trashDownloadOption: "Pindahkan pengunduhan ke Tempat Sampah",
+        revealAppOption: "Tampilkan aplikasi yang terpasang di Finder",
         installedKeptDownloadBodyFormat: "%@ is ready in %@. The disk image was ejected and its download kept.",
         installingFormat: "Installing %@…"
     )

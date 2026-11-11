@@ -6,7 +6,7 @@ import Combine
 import SwiftUI
 
 extension Notification.Name {
-    static let menuPanelWillShow = Notification.Name("VorssaintMenuPanelWillShow")
+    static let menuPanelWillShow = Notification.Name("Space7MenuPanelWillShow")
 }
 
 struct MenuPanelFocusRequest: Equatable {
@@ -3092,7 +3092,7 @@ struct KeepAwakeCard: View {
 
     private func batteryNote(_ percent: Int) -> String {
         switch l10n.language {
-        case .enUS: return "Battery at \(percent)%. Plug in or lower the battery limit to start"
+        case .enUS, .id: return "Battery at \(percent)%. Plug in or lower the battery limit to start"
         case .ptBR: return "Bateria em \(percent)%. Conecte o carregador ou reduza o limite de bateria para iniciar"
         case .tr: return "Pil %\(percent). Başlatmak için şarja takın veya pil sınırını düşürün"
         case .ru: return "Заряд \(percent)%. Подключите питание или снизьте порог заряда, чтобы начать"
@@ -3111,7 +3111,7 @@ struct KeepAwakeCard: View {
 
     private var chipHint: String {
         switch l10n.language {
-        case .enUS: return "Click a chip to start. Click it again to stop"
+        case .enUS, .id: return "Click a chip to start. Click it again to stop"
         case .ptBR: return "Clique em um chip para iniciar. Clique de novo para parar"
         case .tr: return "Başlatmak için bir çipe tıklayın. Durdurmak için tekrar tıklayın"
         case .ru: return "Нажмите на чип, чтобы начать. Нажмите снова, чтобы остановить"
