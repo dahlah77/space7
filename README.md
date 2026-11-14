@@ -1,6 +1,6 @@
 # Space7
 
-**Windows Edition (Preview):** Aplikasi Windows x64 tersedia di [`Windows/`](Windows/README.md), dengan source C# WinForms, skrip build/instalasi, dan fitur khusus Windows. Versi macOS Swift/SwiftUI tetap dipertahankan.
+**Windows Edition v0.2 (Preview):** Port Windows x64 di [`Windows/`](Windows/README.md) kini memiliki panel mengambang dan Settings yang mengikuti UI Space7 macOS, plus mixer audio per-aplikasi WASAPI, monitor sistem, tata letak jendela, dan utilitas Windows. Source Swift/SwiftUI macOS tetap dipertahankan.
 
 **Space7** adalah fork aplikasi utilitas macOS berbasis [Vorssaint](https://github.com/vorssaint/vorssaint-utils), dengan identitas baru, logo S7, dan antarmuka Bahasa Indonesia.
 

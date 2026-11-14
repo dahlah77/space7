@@ -19,7 +19,8 @@ namespace Space7Windows {
             if (args.Any(a => a == "--selftest")) { Console.WriteLine(SelfTest()); return; }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainWindow());
+            if (args.Any(a => a == "--settings-preview")) { var p=new MacPanel(); p.Hide(); Application.Run(new Settings7(p)); return; }
+            Application.Run(new MacPanel());
         }
         public static string SelfTest() {
             try {
@@ -32,7 +33,7 @@ namespace Space7Windows {
         }
     }
     public class MainWindow : Form {
-        static readonly Color Bg=Color.FromArgb(8,13,22), Side=Color.FromArgb(12,20,32), PanelBg=Color.FromArgb(20,32,47), Elevated=Color.FromArgb(26,43,58), Cyan=Color.FromArgb(74,233,254), Light=Color.FromArgb(231,242,248), Muted=Color.FromArgb(151,175,190), Red=Color.FromArgb(255,116,128);
+        static readonly Color Bg=Color.FromArgb(24,24,24), Side=Color.FromArgb(34,34,34), PanelBg=Color.FromArgb(43,43,43), Elevated=Color.FromArgb(59,59,59), Cyan=Color.FromArgb(0,122,255), Light=Color.FromArgb(236,236,237), Muted=Color.FromArgb(160,160,160), Red=Color.FromArgb(255,116,128);
         Panel sidebar, main, top;
         FlowLayoutPanel page;
         Label headline, smallline, cpuLabel, ramLabel, diskLabel, uptimeLabel, scanInfo;
