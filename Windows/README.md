@@ -1,42 +1,54 @@
-# Space7 Windows Edition (Preview)
+# Space7 — Windows Edition 0.2
 
-Native Windows companion for the [Space7 macOS fork](https://github.com/dahlah77/space7). This is a separate C# Windows Forms implementation because original Swift/SwiftUI interfaces cannot run directly on Boot Camp Windows.
+Versi Windows native dari [Space7](https://github.com/dahlah77/space7), dirancang dengan acuan UI popup menu bar dan Settings pada Space7 macOS. Proyek macOS Swift/SwiftUI tetap dipertahankan; ini port C# Windows Forms yang terpisah, bukan menjalankan file macOS di Windows.
 
-## Status
+## Tampilan
 
-Implemented and tested on Apple MacBookPro16,2 running Windows 10 Pro x64 through Boot Camp:
+- Panel gelap berukuran ringkas, logo Saturnus, delapan tab ikon (Daya, Mixer, Sistem, Jaringan, Disk, Energi, Utilitas, Kontrol)
+- Kartu panel, tombol switch, grafik CPU/RAM, detail network/baterai, scroll vertikal
+- Settings terpisah dengan search dan sidebar berkelompok, menyerupai struktur Settings asli
+- Ikon tray Windows yang dapat menampilkan/menyembunyikan panel
 
-- CPU/RAM/disk/uptime dashboard
-- Process inspection and confirmed termination (core system processes protected)
-- Manual user-Temp cleanup (never automatic or preselected)
-- Installed-app inventory and Windows Apps & Features shortcut
-- Window listing, focus and minimize
-- Manual clipboard viewing/copying/clearing
-- Screenshot into Pictures/Space7
-- Shortcuts for Boot Camp Control Panel, Macs Fan Control, Device Manager, Task Manager, File Explorer, Sound Mixer and Windows Settings
+## Fungsi aktif
 
-Not yet ported: native macOS-specific helpers, per-app audio mixer, automatic clipboard history, advanced screen recording, and direct SMC fan-speed controls. Mac fan-speed control is intentionally delegated to Macs Fan Control when present.
+- Tetap terjaga / jaga layar menyala memakai SetThreadExecutionState (kembali normal saat dimatikan/keluar)
+- Master volume dan mute audio Windows
+- Volume dan mute **per aplikasi** memakai antarmuka COM WASAPI/Audio Sessions (tidak membutuhkan NAudio atau driver tambahan)
+- Ringkasan CPU, RAM, baterai, disk, network; tren CPU/RAM
+- Tata letak jendela (kiri/kanan/atas/bawah/tengah/sudut) berdasarkan pemilihan jendela
+- Pembersih parameter pelacak URL secara lokal
+- Pembersihan manual file Temp pengguna yang berumur minimal 24 jam, selalu pilih + konfirmasi
+- Manajer proses, daftar aplikasi, pengelola jendela, screenshot, dan clipboard manual (melalui jendela utilitas lanjutan)
+- Pintasan Boot Camp Control Panel, Macs Fan Control, Windows audio, jaringan, daya dan pengaturan terkait
 
-## Build and install (Windows x64)
+## Belum setara macOS 1:1
 
-Requires Windows 10/11 and .NET Framework 4.x with its C# compiler at Windows/Microsoft.NET/Framework64/v4.0.30319/csc.exe. Boot Camp is optional for general features; hardware-specific tools appear only when installed.
+Notch/Dynamic Island, Dock Preview, keyboard hooking/switcher khusus macOS, perekam layar & editor video tingkat lanjut, Homebrew asli, shelf drag-and-drop, fitur media lengkap dan fan-control berbasis SMC langsung belum diport. Fitur seperti ini **tidak diklaim berfungsi**. Jika memungkinkan, Space7 memanggil alternatif sistem bawaan Windows.
 
-In PowerShell:
+## Build
 
-    powershell -ExecutionPolicy Bypass -File .\build.ps1 -Install
+Perangkat target Windows 10/11 x64. Dibuat dengan compiler C# .NET Framework 4.x yang tersedia di:
 
-Creates Space7.exe, installs into %LOCALAPPDATA%\Programs\Space7, adds Start Menu/Desktop shortcuts, and registers an uninstaller for this user. No administrator permission is required.
+    C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe
 
-To build without installing:
+Semua source ada di folder ini; tanpa modul pihak ketiga. Jalankan PowerShell:
 
-    powershell -ExecutionPolicy Bypass -File .\build.ps1
+    powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Install
 
-The app has a non-destructive diagnostics entry point: load its managed assembly and call Space7Windows.Program.SelfTest().
+Hasilnya dipasang pada %LOCALAPPDATA%\Programs\Space7 tanpa hak administrator; shortcut dibuat di Desktop dan Start Menu.
 
-## Safety
+Untuk build saja:
 
-Files are only removed from the current user's Temp directory when explicitly checked and confirmed; nothing is selected by default. Process termination and clipboard clearing likewise require deliberate actions. The app does not upload or persist system information.
+    powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 
-## License
+Uji dasar:
 
-GPL-3.0-or-later, consistent with the upstream Space7/Vorssaint project. Not affiliated with, endorsed by or distributed by the original Vorssaint maintainers.
+    powershell -NoProfile -STA -ExecutionPolicy Bypass -File .\Test-Space7.ps1
+
+## Privasi dan batasan
+
+Tidak menyimpan histori clipboard, meng-upload data atau menghapus file/proses otomatis. Pemilihan jendela, pembersihan, dan terminasi proses memerlukan tindakan pengguna. Volume per aplikasi hanya menjangkau sesi audio Windows yang aktif di output default. Kecepatan kipas tidak diubah oleh Space7.
+
+## Lisensi
+
+GPL-3.0-or-later. Menghormati kredit dan lisensi asal Space7/Vorssaint. Ini port independen, bukan rilis resmi dari pengembang Vorssaint.
